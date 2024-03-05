@@ -1,0 +1,125 @@
+
+{
+    "order_list":[
+        {
+            "OrderNumber":"1",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"KNET",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Pending",
+            "OrderStatusColor":"bg-warning"
+        },
+        {
+            "OrderNumber":"2",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentMethod":"KNET",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Confirmed",
+            "OrderStatusColor":"bg-success"
+        },
+        {
+            "OrderNumber":"3",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"KNET",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Cancelled",
+            "OrderStatusColor":"bg-dark"
+        },
+        {
+            "OrderNumber":"4",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"KNET",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Delivered",
+            "OrderStatusColor":"bg-info"
+        },
+        {
+            "OrderNumber":"5",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"MASTER",
+            "PaymentMethodColor":"bg-warning",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Received",
+            "OrderStatusColor":"bg-success"
+        },
+        {
+            "OrderNumber":"6",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"MASTER",
+            "PaymentMethodColor":"bg-warning",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"OnTheWay",
+            "OrderStatusColor":"bg-primary"
+        },
+        {
+            "OrderNumber":"7",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"MASTER",
+            "PaymentMethodColor":"bg-warning",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Returned",
+            "OrderStatusColor":"bg-danger"
+        },
+        {
+            "OrderNumber":"8",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"MASTER",
+            "PaymentMethodColor":"bg-warning",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Discarded",
+            "OrderStatusColor":"bg-danger"
+        },
+        {
+            "OrderNumber":"9",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"KNET",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Failed",
+            "OrderStatusColor":"bg-danger"
+        },
+        {
+            "OrderNumber":"10",
+            "OrderDate":"25/05/2020",
+            "CustomerName":"Customer Name",
+            "CustomerMobileNumber":"99999999",
+            "PaymentMethod":"KNET",
+            "PaymentMethodColor":"bg-primary",
+            "PaymentStatus":"CAPTURED",
+            "DelieveryAmount":"20.000",
+            "OrderStatus":"Cancelled",
+            "OrderStatusColor":"bg-dark"
+        }
+    ]
+}

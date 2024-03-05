@@ -1,0 +1,119 @@
+{
+    "MainMenu":[
+        {
+            "LinkTitle":"Home",
+            "LinkURL":"index.html"
+        },
+        {
+            "LinkTitle":"About Us",
+            "LinkURL":"about-us.html"
+        },
+        {
+            "LinkTitle":"Attractions",
+            "DataShow":"attractions",
+            "LinkURL":"attractions.html"
+        },
+        {
+            "LinkTitle":"Activities",
+            "DataShow":"activities",
+            "LinkURL":"activities.html"
+        },
+        {
+            "LinkTitle":"Projects",
+            "LinkURL":"projects.html"
+        },
+        {
+            "LinkTitle":"Events",
+            "LinkURL":"events-listing.html" 
+        },
+        {
+            "LinkTitle":"News",
+            "LinkURL":"news-listing.html"
+        },
+        
+        {
+            "LinkTitle":"Media Gallery",
+            "LinkURL":"media-album.html"
+        },
+        {
+            "LinkTitle":"Careers",
+            "LinkURL":"careers.html"
+        },
+        {
+            "LinkTitle":"Contact Us",
+            "LinkURL":"contact-us.html"
+        }
+    ],
+    "SubMenu-attractions":[
+        {
+            "LinkTitle":"Kuwait Towers",
+            "LinkURL":"attractions-detail.html"
+        },
+        {
+            "LinkTitle":"Clubs",
+            "LinkURL":"#"
+        },
+        {
+            "LinkTitle":"Resorts",
+            "LinkURL":"#"
+        },
+        {
+            "LinkTitle":"Beaches",
+            "LinkURL":"#"
+        },
+        {
+            "LinkTitle":"Parks & Gardens",
+            "LinkURL":"#"
+        },
+        {
+            "LinkTitle":"Entertainment",
+            "LinkURL":"#"
+        }
+    ],
+    "SubMenu-activities":[
+        {
+            "LinkTitle":"Swimming",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Health & Fitness",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Kids Play Areas ",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Theme Parks",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Rent Chalets ",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Beaches",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Boats & Yachts",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Picnic Spots ",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Dining ",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Festivals",
+            "LinkURL":"activities-listing.html"
+        },
+        {
+            "LinkTitle":"Entertainment",
+            "LinkURL":"activities-listing.html"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "ImageURL":"assets/img/attractions/attractions (1).png",
+        "IconURL":"assets/img/attractions/icons/kuwait-towers.svg",
+        "Title":"Kuwait Towers",
+        "HEXCode1":"#B01848",
+        "HEXCode2":"#B01848"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (5).png",
+        "IconURL":"assets/img/attractions/icons/clubs.svg",
+        "Title":"Clubs",
+        "HEXCode1":"#4F4D75",
+        "HEXCode2":"#4F4D75"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (6).png",
+        "IconURL":"assets/img/attractions/icons/resorts.svg",
+        "Title":"Resorts",
+        "HEXCode1":"#622255",
+        "HEXCode2":"#622255"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (2).png",
+        "IconURL":"assets/img/attractions/icons/beaches.svg",
+        "Title":"Beaches",
+        "HEXCode1":"#23B9D6",
+        "HEXCode2":"#23B9D6"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (3).png",
+        "IconURL":"assets/img/attractions/icons/park-and-gardens.svg",
+        "Title":"Park & Gardens",
+        "HEXCode1":"#27AD7A",
+        "HEXCode2":"#27AD7A"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (4).png",
+        "IconURL":"assets/img/attractions/icons/recreational-and-entertainment.svg",
+        "Title":"Entertainment",
+        "HEXCode1":"#F39200",
+        "HEXCode2":"#F39200"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (3).png",
+        "IconURL":"assets/img/attractions/icons/park-and-gardens.svg",
+        "Title":"Park & Gardens",
+        "HEXCode1":"#27AD7A",
+        "HEXCode2":"#27AD7A"
+    },
+    {
+        "ImageURL":"assets/img/attractions/attractions (4).png",
+        "IconURL":"assets/img/attractions/icons/recreational-and-entertainment.svg",
+        "Title":"Entertainment",
+        "HEXCode1":"#F39200",
+        "HEXCode2":"#F39200"
+    }
+]

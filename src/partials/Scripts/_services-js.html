@@ -1,0 +1,111 @@
+<script>
+    
+    var btn_service_1 = document.querySelector('.btn-services-1');
+    var btn_service_2 = document.querySelector('.btn-services-2');
+    var btn_service_3 = document.querySelector('.btn-services-3');
+
+    // var btn_service_1_anime = anime({    
+    //     targets: ['.btn-services-2','.btn-services-3'],
+    //     translateX: [0,250],
+    // duration: 300,
+    // autoplay: false,    
+    // loop:false,
+    // easing: 'easeInOutQuad'
+    // });
+    
+    function funAnimateBtnService(el,opacity, top, duration ) {
+    anime.remove(el);
+    anime({
+        targets: el,
+        opacity:opacity,
+        top: top,
+        duration: duration,
+        easing: 'easeInOutQuad'
+    });
+    }
+
+
+    
+    /*=============================================
+    =            Service 1            =
+    =============================================*/
+    
+    btn_service_1.addEventListener('mouseenter', function(e) {
+        funAnimateBtnService( ['.btn-services-2','.btn-services-3'],0, -100, 400)
+        anime({
+        targets: '.service-1',
+        opacity:1,       
+        easing: 'easeInOutQuad'
+    });
+        console.log('mouseenter')
+  }, false);
+  
+  btn_service_1.addEventListener('mouseleave', function(e) {
+    funAnimateBtnService(['.btn-services-2','.btn-services-3'],1, 0, 400)
+    anime({
+        targets: '.service-1',
+        opacity:0,       
+        easing: 'easeInOutQuad'
+    });
+    console.log('mouseleave')
+  }, false);  
+    
+    /*=====  End of Service 1  ======*/
+
+    
+    /*=============================================
+    =            Service 2            =
+    =============================================*/
+    
+    btn_service_2.addEventListener('mouseenter', function(e) {
+        funAnimateBtnService( ['.btn-services-1','.btn-services-3'],0, -100, 400)
+        anime({
+        targets: '.service-2',
+        opacity:1,       
+        easing: 'easeInOutQuad'
+    });
+        console.log('mouseenter')
+  }, false);
+  
+  btn_service_2.addEventListener('mouseleave', function(e) {
+    funAnimateBtnService(['.btn-services-1','.btn-services-3'],1, 0, 400)
+    anime({
+        targets: '.service-2',
+        opacity:0,       
+        easing: 'easeInOutQuad'
+    });
+    console.log('mouseleave')
+  }, false);  
+    
+    /*=====  End of Service 2  ======*/
+
+    /*=============================================
+    =            Service 3            =
+    =============================================*/
+    
+    btn_service_3.addEventListener('mouseenter', function(e) {
+        funAnimateBtnService( ['.btn-services-1','.btn-services-2'],0, -100, 400)
+        anime({
+        targets: '.service-3',
+        opacity:1,       
+        easing: 'easeInOutQuad'
+    });
+        console.log('mouseenter')
+  }, false);
+  
+  btn_service_3.addEventListener('mouseleave', function(e) {
+    funAnimateBtnService(['.btn-services-1','.btn-services-2'],1, 0, 400)
+    anime({
+        targets: '.service-3',
+        opacity:0,       
+        easing: 'easeInOutQuad'
+    });
+    console.log('mouseleave')
+  }, false);  
+    
+    /*=====  End of Service 3  ======*/
+    
+    
+   
+  
+</script>

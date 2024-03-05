@@ -1,0 +1,20 @@
+<div class="mb-5">
+    <ul class="nav nav-tabs justify-content-center1" id="myTab" role="tablist">
+        {{#repeat Steps}}
+        <li class="nav-item flex-fill1 {{#unless @index}}active{{/unless}}" role="presentation" data-bs-toggle="tooltip" data-bs-placement="top" title="Step {{add @index 1}}">
+            <a class="nav-link {{#unless @index}}active{{/unless}} fw-bold rounded-0 mx-auto d-flex align-items-center justify-content-center" href="#step{{add @index 1}}" id="step{{add @index 1}}-tab" data-bs-toggle="tab" role="tab" aria-controls="step{{add @index 1}}" aria-selected="true">
+                Tab {{add @index 1}}
+            </a>
+        </li>
+        {{/repeat}}
+    </ul>
+    <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item active"><a class="nav-link active" href="#home" role="tab" aria-controls="home" data-bs-toggle="tab">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile" role="tab" aria-controls="profile" data-bs-toggle="tab">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#messages" role="tab" aria-controls="messages" data-bs-toggle="tab">Messages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#settings" role="tab" aria-controls="settings" data-bs-toggle="tab">Settings</a></li>
+    </ul> -->
+    {{> @partial-block }}
+</div>
+
+

@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+// 0. Import Bourbon
+@import 'bourbon';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize',
+  'utilities',
+  'vendors/bootstrap',
+  'vendors/slick-slider',
+  'vendors/select2',
+  'vendors/owl',
+  'vendors/animate',
+  'vendors/aos',
+  'vendors/_animejs',
+  'vendors/_nanogellary2',
+  'vendors/_directional',
+  'vendors/_datepicker',
+  'vendors/fontawesome';
+  
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+
+// 6. Page-specific styles
+
+// 7. Themes
+@import
+  'themes/default';
+
+// 8. Custom
+@import
+  'custom';

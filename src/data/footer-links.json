@@ -1,0 +1,119 @@
+[
+    {
+        "Title":"Quick Links",
+        "InnerLinks":[
+            {
+                "LinkText":"About Us",
+                "LinkURL":"about-us.html"
+            },
+            {
+                "LinkText":"Projects",
+                "LinkURL":"projects.html"
+            },
+            {
+                "LinkText":"Events",
+                "LinkURL":"events-listing.html"
+            },
+            {
+                "LinkText":"News",
+                "LinkURL":"news-listing.html"
+            },
+            
+            {
+                "LinkText":"Media Gallery",
+                "LinkURL":"media-album.html"
+            },
+            {
+                "LinkText":"Careers",
+                "LinkURL":"careers.html"
+            }
+        ]
+    },
+    {
+        "Title":"Attractions",
+        "InnerLinks":[
+            {
+                "LinkText":"Kuwait Towers",
+                "LinkURL":"attractions-detail.html"
+            },
+            {
+                "LinkText":"Clubs",
+                "LinkURL":"attractions.html"
+            },
+            {
+                "LinkText":"Resorts",
+                "LinkURL":"attractions.html"
+            },
+            {
+                "LinkText":"Beaches",
+                "LinkURL":"attractions.html"
+            },
+            {
+                "LinkText":"Parks & Gardens",
+                "LinkURL":"attractions.html"
+            },
+            {
+                "LinkText":"Entertainment",
+                "LinkURL":"attractions.html"
+            }
+        ]
+    },
+    {
+        "Title":"Activities",
+        "InnerLinks":[
+            {
+                "LinkText":"Swimming",
+                "LinkURL":"activities-listing.html"
+            },
+            {
+                "LinkText":"Health & Fitness",
+                "LinkURL":"activities-listing.html"
+            },
+            {
+                "LinkText":"Kids Play Areas",
+                "LinkURL":"activities-listing.html"
+            },
+            {
+                "LinkText":"Theme Parks",
+                "LinkURL":"activities-listing.html"
+            },
+            {
+                "LinkText":"Rent Chalets",
+                "LinkURL":"activities-listing.html"
+            },
+            {
+                "LinkText":"Beaches",
+                "LinkURL":"activities-listing.html"
+            }
+        ]
+    },
+    {
+        "Title":"Get In Touch",
+        "InnerLinks":[
+            {
+                "LinkText":"Contact Us",
+                "LinkURL":"contact-us.html"
+            },
+            {
+                "LinkText":"Information Request",
+                "LinkURL":"information-request-form.html"
+            },
+            {
+                "LinkText":"Grievance Form",
+                "LinkURL":"grievance-form.html"
+            },
+            {
+                "LinkText":"Right to Access Information",
+                "LinkURL":"right-to-access-information.html"
+            },
+            {
+                "LinkText":"Terms and Conditions",
+                "LinkURL":"terms-and-conditions.html"
+            },
+            {
+                "LinkText":"Privacy Policy",
+                "LinkURL":"privacy-policy.html"
+            }
+        ]
+    }
+]

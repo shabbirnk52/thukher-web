@@ -1,0 +1,50 @@
+<script>
+    $(document).ready(function () {
+        var slideControls = $('.slide-controls');
+        // Init slick slider + animation
+        $('.timeline_slider').not('.slick-initialized').slick({
+            rtl: false,
+            autoplay: true,
+            speed: 800,
+            lazyLoad: 'progressive',
+            arrows: true,
+            appendDots: slideControls.find('.slider-dots-box'),
+            dots: true,
+            dotsClass: 'slider-dots', //slick generates this <ul.custom-dots> within the appendDots container
+            appendArrows: slideControls,
+            prevArrow: slideControls.find('.btn-timeline-prev'),
+            nextArrow: slideControls.find('.btn-timeline-next'),
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        dots: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        }).slickAnimation();
+
+        if ($('html').attr('dir') == 'rtl') {
+            console.log("RTL enabled");
+            $('.timeline_slider').slick('slickSetOption', 'rtl', true, false);
+        }
+
+    });
+
+
+</script>

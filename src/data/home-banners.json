@@ -1,0 +1,74 @@
+[
+    {
+        "VideoURL":"assets/videos/Kuwait-Towers-Trim.mp4",
+        "PosterURL":"assets/img/banner-poster.png",
+        "ThumbnailImage":"assets/img/attractions/kuwait-towers.png",
+        "Title":"Kuwait Towers",
+        "Description":"TEC is all about creating awesome experiences for you! As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions-detail.html"
+    },
+    {
+        "VideoURL":"assets/videos/club.mp4",
+        "PosterURL":"assets/img/club.png",
+        "ThumbnailImage":"assets/img/attractions/clubs.png",
+        "Title":"Clubs",
+        "Description":"TEC Clubs is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/resort.mp4",
+        "PosterURL":"assets/img/resort.png",
+        "ThumbnailImage":"assets/img/attractions/resorts.png",
+        "Title":"Resort",
+        "Description":"TEC Resorts is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/beach.mp4",
+        "PosterURL":"assets/img/beach.png",
+        "ThumbnailImage":"assets/img/attractions/beaches.png",
+        "Title":"Beach",
+        "Description":"TEC Beaches is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/park.mp4",
+        "PosterURL":"assets/img/park.png",
+        "ThumbnailImage":"assets/img/attractions/parks.png",
+        "Title":"Park & Gardens",
+        "Description":"TEC Beaches is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/themepark.mp4",
+        "PosterURL":"assets/img/themepark.png",
+        "ThumbnailImage":"assets/img/attractions/entertainment.png",
+        "Title":"Entertainment",
+        "Description":"TEC R&E is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/park.mp4",
+        "PosterURL":"assets/img/park.png",
+        "ThumbnailImage":"assets/img/attractions/parks.png",
+        "Title":"Park & Gardens",
+        "Description":"TEC Beaches is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    },
+    {
+        "VideoURL":"assets/videos/themepark.mp4",
+        "PosterURL":"assets/img/themepark.png",
+        "ThumbnailImage":"assets/img/attractions/entertainment.png",
+        "Title":"Entertainment",
+        "Description":"TEC R&E is all about relaxing and enjoying the time with your friends and your family. As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"attractions.html"
+    }
+]

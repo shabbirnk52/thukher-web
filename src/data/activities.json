@@ -1,0 +1,58 @@
+[
+    {
+        "Title":"Horizon Restaurant",
+        "ImageURL":"assets/img/activities/inner-activities (1).jpg",
+        "Description":"The tower’s signature dining hall offers a palette-pleasing mix of Oriental and International cuisine. It offers an open buffet service daily from breakfast to dinner. The tower’s signature dining hall offers a palette-pleasing mix of Oriental and International cuisine. It offers an open buffet service daily from breakfast to dinner.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"Amimoto Restaurant",
+        "ImageURL":"assets/img/activities/inner-activities (2).jpg",
+        "Description":"Amimoto, serves authentic Japanese dishes with a contemporary twist delivered by skilled chefs. ",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"Dasman Ballroom",
+        "ImageURL":"assets/img/activities/inner-activities (3).jpg",
+        "Description":"A specially furnished room for VIP government guests’ reception.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"AlWaha",
+        "ImageURL":"assets/img/activities/inner-activities (4).jpg",
+        "Description":"Relax and enjoy a cup of coffee at one of the country’s must-see places. Have a taste of quality drinks and luscious desserts.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"Horizon Restaurant",
+        "ImageURL":"assets/img/activities/inner-activities (1).jpg",
+        "Description":"The tower’s signature dining hall offers a palette-pleasing mix of Oriental and International cuisine. It offers an open buffet service daily from breakfast to dinner. The tower’s signature dining hall offers a palette-pleasing mix of Oriental and International cuisine. It offers an open buffet service daily from breakfast to dinner.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"Amimoto Restaurant",
+        "ImageURL":"assets/img/activities/inner-activities (2).jpg",
+        "Description":"Amimoto, serves authentic Japanese dishes with a contemporary twist delivered by skilled chefs. ",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"Dasman Ballroom",
+        "ImageURL":"assets/img/activities/inner-activities (3).jpg",
+        "Description":"A specially furnished room for VIP government guests’ reception.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    },
+    {
+        "Title":"AlWaha",
+        "ImageURL":"assets/img/activities/inner-activities (4).jpg",
+        "Description":"Relax and enjoy a cup of coffee at one of the country’s must-see places. Have a taste of quality drinks and luscious desserts.",
+        "Timing":"8:00 AM – 11:30 PM",
+        "URL":"javascript:;"
+    }
+]

@@ -1,0 +1,61 @@
+
+$slick-font-path: "../fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "../img/" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+/*rtl:begin:ignore*/
+@import 'node_modules/slick-carousel/slick/slick';
+@import 'node_modules/slick-carousel/slick/slick-theme';
+/*rtl:end:ignore*/
+
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+.video_slider{
+    .slick-track{
+        align-items: start;
+    }
+}
+
+.slick-dots{
+    z-index: 999;
+     li{
+            button:before{
+            content: "";
+            border: 2px solid $white;
+            border-radius: 2rem;
+            }
+            &.slick-active{
+                button:before{
+                    background-color: white;
+                    } 
+            }
+        }
+   
+}
+.slick-dots li button:before{
+    content: "";
+    border: 2px solid $white;
+    border-radius: 2rem;
+}
+
+.has-slider{
+    >div:not(:first-child){
+        display: none !important;
+    }
+    &.slick-initialized{
+        >div:not(:first){
+            display: none !important;
+        }
+    }
+}

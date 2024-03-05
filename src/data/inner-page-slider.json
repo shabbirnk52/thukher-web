@@ -1,0 +1,26 @@
+[
+    {
+        "ImageURL":"assets/img/banner-poster.png",
+        "PosterURL":"assets/videos/banner-poster.png",
+        "Title":"Kuwait Towers",
+        "Description":"TEC is all about creating awesome experiences for you! As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"#"
+    },
+    {
+        "VideoURL":"assets/videos/Kuwait-Towers-Trim.mp4",
+        "PosterURL":"assets/videos/banner-poster.png",
+        "Title":"Kuwait Towers",
+        "Description":"TEC is all about creating awesome experiences for you! As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"#"
+    },
+    {
+        "ImageURL":"assets/img/banner-poster.png",
+        "PosterURL":"assets/videos/banner-poster.png",
+        "Title":"Kuwait Towers",
+        "Description":"TEC is all about creating awesome experiences for you! As a government-owned entity, we take pride in bringing you a fantastic lineup",
+        "ButtonText":"Learn More",
+        "ButtonURL":"#"
+    }
+]

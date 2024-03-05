@@ -1,0 +1,101 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans,$grays);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "background-color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+    "border-color": map-merge(
+      map-get($utilities, "border-color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "border-color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+    "rounded-top": map-merge(
+      map-get($utilities, "rounded-top"),
+      ( responsive: true ),
+    ),
+    "rounded-bottom": map-merge(
+      map-get($utilities, "rounded-bottom"),
+      ( responsive: true ),
+    ),
+    "rounded-start": map-merge(
+      map-get($utilities, "rounded-start"),
+      ( responsive: true ),
+    ),
+    "rounded-end": map-merge(
+      map-get($utilities, "rounded-end"),
+      ( responsive: true ),
+    ),
+
+    "top": map-merge(
+      map-get($utilities, "top"),
+      ( responsive: true ),
+    ),
+    "bottom": map-merge(
+      map-get($utilities, "bottom"),
+      ( responsive: true ),
+    ),
+    "start": map-merge(
+      map-get($utilities, "start"),
+      ( responsive: true ),
+    ),
+    "end": map-merge(
+      map-get($utilities, "end"),
+      ( responsive: true ),
+    ),
+    "position": map-merge(
+      map-get($utilities, "position"),
+      ( responsive: true ),
+    ),
+    "translate-middle": map-merge(
+      map-get($utilities, "translate-middle"),
+      ( responsive: true ),
+    ),
+    "rotated":(
+      property: transform,
+      class:rotated,
+      responsive: true,
+      values:(
+        0: rotateZ(0),
+        90: rotateZ(90deg),
+      )
+    )
+  )
+);

@@ -1,0 +1,68 @@
+
+/*rtl:begin:ignore*/
+$revsliderImagePath: "../img/revslider" !default;
+$revsliderFontPath: "../fonts" !default;
+@import 
+'node_modules/revslider/scss/settings';
+@import 
+'../../../../vendors/revslider/navigation-skins/ares',
+'../../../../vendors/revslider/navigation-skins/custom',
+'../../../../vendors/revslider/navigation-skins/dione',
+'../../../../vendors/revslider/navigation-skins/erinyen',
+'../../../../vendors/revslider/navigation-skins/gyges',
+'../../../../vendors/revslider/navigation-skins/hades',
+'../../../../vendors/revslider/navigation-skins/hebe',
+'../../../../vendors/revslider/navigation-skins/hephaistos',
+'../../../../vendors/revslider/navigation-skins/hermes',
+'../../../../vendors/revslider/navigation-skins/hesperiden',
+'../../../../vendors/revslider/navigation-skins/metis',
+'../../../../vendors/revslider/navigation-skins/persephone',
+'../../../../vendors/revslider/navigation-skins/uranus',
+'../../../../vendors/revslider/navigation-skins/zeus',
+'../../../../vendors/revslider/layers',
+'../../../../vendors/revslider/navigation';
+
+
+.rev_slider_wrapper *{direction:ltr !important;}
+/*rtl:end:ignore*/
+.tp-static-layer *{
+    text-align: left !important;
+}
+// .top-title{
+//     font-size: 1.125rem;
+// margin-bottom: 0;
+// @include media-breakpoint-up(md) {
+// font-size: 2.125rem; 
+// }
+// @include media-breakpoint-up(lg) {
+// font-size: 2.125rem; 
+// margin-bottom: 20px;
+// }
+// @include media-breakpoint-up(xl) {
+// font-size: 3.125rem; 
+// margin-bottom: 50px;
+// }
+// }
+// .title{
+//     font-size: 2.25rem;
+// font-weight: 900;
+// margin: 10px 0;
+// @include media-breakpoint-up(md) { 
+// font-size: 3.25rem;
+// margin: 20px 0;
+// }
+// @include media-breakpoint-up(lg) { 
+// font-size: 4.25rem;
+// margin: 20px 0;
+// }
+// @include media-breakpoint-up(xl) { 
+// font-size: 6.25rem;
+// margin: 30px 0;
+// }
+// }
+// .banner_description{
+// display: none;
+// @include media-breakpoint-up(lg) { 
+// display: block;
+// }
+// }

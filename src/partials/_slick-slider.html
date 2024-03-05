@@ -1,0 +1,56 @@
+<div class="slider slider_name  ">
+    {{#repeat 8}}
+        <div>
+            <h3>This is Title {{@index}}</h3>
+            <p>
+                Vero et diam elitr tempor no invidunt kasd. Takimata sanctus sed sit no vero at est stet, et duo ut.
+            </p>
+        </div>
+    {{/repeat}}
+</div>
+<script src="{{root}}assets/vendor/js/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.slider_name').slick({
+            rtl: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
+            arrows: true,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+
+        });
+        if ($('html').attr('dir') == 'rtl') {      
+            console.log("RTL enabled");
+            $('.slider_name').slick('slickSetOption', 'rtl', true, false);
+        }
+    });
+</script>

@@ -1,0 +1,66 @@
+
+
+
+<script>
+$(document).ready(function() {
+    // Init slick slider + animation
+$('.slider_banner').slick({
+    rtl: false,
+  autoplay: true,
+//   speed: 1500,
+  fade: true,
+  lazyLoad: 'progressive',
+  arrows: true,
+  dots: false,
+  cssEase:"cubic-bezier(0.71, -0.01, 0.71, 0.99)",
+	prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+	nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+        responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+}).slickAnimation();
+
+$('.slick-nav').on('click touch', function(e) {
+
+    e.preventDefault();
+
+    let arrow = $(this);
+
+    if(!arrow.hasClass('animate')) {
+        arrow.addClass('animate');
+        setTimeout(() => {
+            arrow.removeClass('animate');
+        }, 1600);
+    }
+
+});
+if ($('html').attr('dir') == 'rtl') {      
+            console.log("RTL enabled");
+            $('.slider_banner').slick('slickSetOption', 'rtl', true, false);
+            $('.slider_banner').slick('slickSetOption', 'prevArrow', '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>', false);
+            $('.slider_banner').slick('slickSetOption', 'nextArrow', '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>', false);
+            
+        }
+}); 
+ 
+</script>

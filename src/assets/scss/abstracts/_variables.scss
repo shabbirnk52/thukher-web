@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// https://bootstrapvars.com/4.4/
+
+// Changing the theme colors
+$primary: #981c1f;
+$secondary: #000000;
+
+$tertiary: #FFF594;
+$success: #27AD7A;
+$info: #36c6f2;
+$warning: #d8df09;
+$danger: #dd0b1c;
+$dark: #111111; 
+$light: #f5f5f5; 
+// $body-color:#707070;
+$body-color:#111111;
+$link-color:$body-color;
+$link-hover-color:$primary;
+$link-hover-color-rgb:rgba($primary,1);
+$overshoot-animation: cubic-bezier(0.4, 1.49, 0.58, 1);
+
+$gray-100: #f8f9fa !default;
+$gray-200: #F1F1F2 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$body-font-size:              1.15rem;
+$h6-font-size:                $font-size-base;
+$font-size-multiplier:        1.2;
+$h5-font-size:                $h6-font-size * $font-size-multiplier;
+$h4-font-size:                $h5-font-size * $font-size-multiplier;
+$h3-font-size:                $h4-font-size * $font-size-multiplier;
+$h2-font-size:                $h3-font-size * $font-size-multiplier;
+$h1-font-size:                $h2-font-size * $font-size-multiplier;
+
+$headings-font-weight: 900;
+
+$font-family:           "Intro Alt" , "GE Dinar One" ;
+$enable-negative-margins: true;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xml: 1440px,
+  xxl: 1800px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1288px
+);
+
+// Extending Position Values
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  auto: auto,
+  unset:unset,
+);
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+

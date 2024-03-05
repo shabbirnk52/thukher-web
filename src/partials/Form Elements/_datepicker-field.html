@@ -1,0 +1,40 @@
+<!-- ========== Start Datepicker Field ========== -->
+{{! Sample Usage:-
+    Syntax: ((> _datepicker-field Label="Date Range Name" Required=1 DateRange=1 NameId="Date-range-id"))
+Variables:-
+    Required = 1 (Default 0)
+    DateRange = 1 (Default 0)
+    Label = Text to be displayed as title of the Field
+    NameId = Must adhere to the html ID guidelines. i.e. must not have spaces.
+}}
+{{#if DateRange}}
+    {{#if Label}}
+<label for="{{NameId}}" class="form-label" localize-me>{{Label}}{{#if Required}}<span class="ms-1 text-danger">*</span>{{/if}}</label>{{/if}}
+ {{#unless RemoveClear}}<a href="javascript:;" class="text-danger text-decoration-underline float-end clear-datepicker" localize-me><small>Clear</small></a>{{/unless}}
+{{!-- {{#unless RemoveClear}}<a href="javascript:;" class="btn btn-danger btn-sm float-end clear-datepicker" localize-me>Clear</a>{{/unless}} --}}
+<div class="input-daterange input-group {{#if InvalidFeedback}}has-validation{{/if}}" data-plugin-datepicker>
+    <span class="input-group-text">
+        <i class="fas fa-calendar-alt"></i>
+    </span>
+    {{> _input-field Label="" HelpText="" NameId="start" InvalidFeedback="" DisableAutocomplete=1}}
+    <span class="input-group-text">
+        to
+    </span>
+    {{> _input-field Label="" HelpText="" NameId="end" InvalidFeedback="" DisableAutocomplete=1}}
+    {{#if InvalidFeedback}}<div class="invalid-feedback" localize-me>{{{InvalidFeedback}}}</div>{{/if}}
+</div>
+{{#if HelpText}}<small class="form-text text-muted" localize-me>{{{HelpText}}}</small>{{/if}}
+{{else}}
+{{#if Label}}
+<label for="{{NameId}}" class="form-label" localize-me>{{Label}}{{#if Required}}<span class="ms-1 text-danger">*</span>{{/if}}</label>{{/if}}
+{{#unless RemoveClear}}<a href="javascript:;" class="text-danger text-decoration-underline float-end clear-datepicker" localize-me><small>Clear</small></a>{{/unless}}
+<div class="input-group {{#if InvalidFeedback}}has-validation{{/if}}">
+    <span class="input-group-text">
+        <i class="fas fa-calendar-alt"></i>
+    </span>
+    {{> _input-field Label="" HelpText="" InvalidFeedback="" Attribute="data-plugin-datepicker" DisableAutocomplete=1}}
+    {{#if InvalidFeedback}}<div class="invalid-feedback" localize-me>{{{InvalidFeedback}}}</div>{{/if}}
+</div>
+{{#if HelpText}}<small class="form-text text-muted" localize-me>{{{HelpText}}}</small>{{/if}}
+{{/if}}
+<!-- ========== End Datepicker Field ========== -->

@@ -1,0 +1,94 @@
+/*rtl:begin:ignore*/
+@import
+    "../../../../vendors/select2/css/select2",
+    "../../../../vendors/select2-bootstrap-theme/select2-bootstrap.min";
+/*rtl:end:ignore*/
+//=================================================
+// All the styling should be done by overwriting
+// the bootstrap SASS variables ONLY
+//=================================================
+
+.select2-container--bootstrap-5{
+	width: 100% !important;
+	// min-width: 150px;
+	// @include media-breakpoint-up(lg){
+	// 	min-width: 250px;
+	// }
+	.select2-selection{
+		border-radius: $form-select-border-radius;
+		border-width: $form-select-border-width;
+		border-color:$form-select-border-color;
+	}
+	.select2-selection--single,.select2-selection--multiple{
+		padding: $form-select-padding-y $form-select-padding-x;
+		height: auto;
+		.select2-selection__rendered{
+			padding-left: 0;
+			padding-right: 1rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+	&.select2-container--focus,&.select2-container--open{
+		.select2-selection{
+			border-color: $form-select-focus-border-color;
+			box-shadow: $form-select-focus-box-shadow;
+		}
+	}
+	.select2-dropdown{
+		border-color: $form-select-focus-border-color;
+		border-radius: $form-select-border-radius;
+		.select2-results__options .select2-results__option{
+			padding: $form-select-padding-y $form-select-padding-x;
+			&:last-of-type{
+				padding-bottom: 1rem;
+			}
+			&[aria-selected=true]:not(.select2-results__option--highlighted),&.select2-results__option--selected{
+				background-color: $primary;
+			}
+			&.select2-results__option--highlighted{
+				background-color: $secondary;
+				color: white;
+			}
+		}
+		.select2-search{
+			padding: $form-select-padding-y $form-select-padding-x;
+			.select2-search__field{
+				border-radius: $form-select-border-radius;
+				border-width: $form-select-border-width;
+				border-color: $form-select-border-color;
+			}
+			.select2-search__field:focus{
+				box-shadow: $form-select-focus-box-shadow;
+				border-color: $form-select-focus-border-color;
+				border-radius: $form-select-border-radius;
+			}
+		} 
+	}
+}
+
+.select2-container--bootstrap-5 .select2-selection--single{
+	background-position: right .75rem center;
+	.select2-selection__rendered{
+		color: $body-color;
+	}
+}
+
+// Project Specific CSS: Used to Cater for Activities
+.bg-light.p-3.rounded-5{
+	.select2-container--bootstrap-5{
+		.select2-selection{
+			border-radius: 2rem;
+			border-width: 1px;
+			border-color:$form-select-border-color;
+		}
+	}
+	.select2-container--bootstrap-5.select2-container--open.select2-container--below .select2-selection{
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom: 0;
+	}
+}

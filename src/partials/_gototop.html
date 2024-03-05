@@ -1,0 +1,21 @@
+<button class="btn btn-primary rounded-circle position-fixed end-0 translate-middle d-none my-auto z-3" onclick="scrollToTop()" id="back-to-up">
+    <i class="fa-solid fa-arrow-up text-light"></i>
+</button>
+
+<script>
+  window.onscroll = () => {
+    toggleTopButton();
+  }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleTopButton() {
+    if (document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20) {
+      document.getElementById('back-to-up').classList.remove('d-none');
+    } else {
+      document.getElementById('back-to-up').classList.add('d-none');
+    }
+  }
+</script>

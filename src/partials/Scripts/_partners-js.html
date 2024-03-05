@@ -1,0 +1,48 @@
+
+<script>
+    $(document).ready(function () {
+        // Init slick slider + animation
+        $('.partners_slider').not('.slick-initialized').slick({ 
+            rtl: false,
+            slidesToShow: 4,
+            slidesToScroll: 1, 
+            autoplay: true,
+            speed: 300,
+            lazyLoad: 'progressive',
+            arrows: false,
+            dots: false, 
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3, 
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3, 
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        }).slickAnimation();
+
+        if ($('html').attr('dir') == 'rtl') {
+            console.log("RTL enabled");
+            $('.partners_slider').slick('slickSetOption', 'rtl', true, false);
+        }
+
+    });
+
+
+</script>

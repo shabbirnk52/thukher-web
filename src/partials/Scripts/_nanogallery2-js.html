@@ -1,0 +1,140 @@
+<script src="{{root}}assets/vendor/js/jquery.nanogallery2.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#nanoGallery").nanogallery2({
+            itemsBaseURL: 'assets/img/media-kit/',
+
+            thumbnailHeight: '200 XS200 SM200 ME300 LA325 XL408', 
+            thumbnailWidth: 'auto',
+            thumbnailGutterWidth: 30,
+            thumbnailGutterHeight: 30,
+            // galleryDisplayMode: "rows",
+            thumbnailBorderVertical: 0,
+            thumbnailBorderHorizontal: 0,
+            colorScheme: { 
+                thumbnail: { "borderColor":"rgba(0,0,0,0)" } },
+            thumbnailLabel: {
+                position: 'overImageOnBottom',
+                displayDescription: false,
+                hideIcons: true,
+                align: 'left'
+            },
+            thumbnailToolbarImage: {
+                // topLeft: 'share',
+            },
+            thumbnailHoverEffect2: 'toolsAppear|image_scale_1.00_1.50_1000|labelAppear75|borderDarker|label_backgroundColor_rgba(0,0,0,0.50)_rgba(0,0,0,0.50)',
+
+            breakpointSizeSM: 500,
+            breakpointSizeME: 750,
+            breakpointSizeLA: 1000,
+            breakpointSizeXL: 1500,
+            fnThumbnailInit:            myTnInit,
+            // fnThumbnailToolCustAction:  myTnTool,
+            touchAutoOpenDelay: -1,
+
+            locationHash: true,
+        });
+
+        // Add custom elements after one thumbnail is build
+        function myTnInit( $e, item, GOMidx ) {
+
+            // var $newElement = $(getShareHTML())
+            var current_url = window.location.href.replace('https://', '');
+            current_url = window.location.href.replace('http://', '');
+            current_url = current_url + "#nanogallery/nanoGallery/0/" + GOMidx;
+            // $('.facebook-btn').attr('href', $('.facebook-btn').attr('href') + current_url);
+            // $('.twitter-btn').attr('href', $('.twitter-btn').attr('href') + current_url);
+            // if (mobileCheck())
+            //     $('.whatsapp-btn').attr('href', "whatsapp://send?text=" + current_url);
+            // else
+            //     $('.whatsapp-btn').attr('href', $('.whatsapp-btn').attr('href') + current_url);
+
+
+            $e.find('.nGY2GThumbnailSub').append(getShareHTML(current_url));
+        }
+
+        // click/touch on custom tool/button
+        function myTnTool( action, item ) {
+        switch( action ) {
+            case 'info':
+            alert('Photo title: '+item.title);
+            
+            break;
+            case 'custom1':
+            // switch favorite status
+            item.customData.favorite=!item.customData.favorite;
+            TnSetFavorite(item);
+            break;
+        }
+        }
+
+        $(document).on("click",'.copy-link',function() {
+            console.log("Clicked!");
+            navigator.clipboard.writeText($(this).attr("data-URL"));
+        });
+        
+
+    });
+
+    function getShareHTML(URL){
+        if (mobileCheck())
+        return `<div class="dropdown position-absolute share-btn ms-2 mt-2" class="myngy2copy" data-ngy2action="copy">
+            <a href="javascript:;" class="dropdown-toggle" style="z-index: 1;" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fa-stack fa-1x">
+                    <i class="fa-solid fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-stack-1x text-white"></i>
+                </span>
+            </a>
+            <ul class="dropdown-menu border-primary img-rounded p-2 shadow share-btns">
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 facebook-btn"
+                        href="https://www.facebook.com/sharer/sharer.php?u=${URL}" target="_blank"><span><i
+                                class="fa-brands fa-facebook-f me-2"></i></span>Facebook</a></li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 twitter-btn" href="https://twitter.com/share?text=${URL}"
+                        target="_blank"><span><i class="fa-brands fa-twitter me-2"></i></span>Twitter</a></li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 whatsapp-btn"
+                        href="whatsapp://send?text=${URL}" href1="whatsapp://send?text="
+                        data-action="share/whatsapp/share"><span><i class="fa-brands fa-whatsapp me-2"></i></span>WhatsApp</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider body-bg-secondary border-secondary my-0">
+                </li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 copy-link" href="javascript:;" data-URL="${URL}"><span><i
+                                class="fa-solid fa-copy me-2"></i></span>Copy link to clipboard</a></li>
+            </ul>
+        </div>`;
+        else
+            return `<div class="dropdown position-absolute share-btn ms-2 mt-2" class="myngy2copy" data-ngy2action="copy">
+            <a href="javascript:;" class="dropdown-toggle" style="z-index: 1;" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fa-stack fa-1x">
+                    <i class="fa-solid fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-stack-1x text-white"></i>
+                </span>
+            </a>
+            <ul class="dropdown-menu border-primary img-rounded p-2 shadow share-btns">
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 facebook-btn"
+                        href="https://www.facebook.com/sharer/sharer.php?u=${URL}" target="_blank"><span><i
+                                class="fa-brands fa-facebook-f me-2"></i></span>Facebook</a></li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 twitter-btn" href="https://twitter.com/share?text=${URL}"
+                        target="_blank"><span><i class="fa-brands fa-twitter me-2"></i></span>Twitter</a></li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 whatsapp-btn"
+                        href="https://web.whatsapp.com/send?text=${URL}" href1="whatsapp://send?text="
+                        data-action="share/whatsapp/share"><span><i class="fa-brands fa-whatsapp me-2"></i></span>WhatsApp</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider body-bg-secondary border-secondary my-0">
+                </li>
+                <li><a class="dropdown-item text-primary my-1 rounded-3 fs-6 copy-link" href="javascript:;" data-URL="${URL}"><span><i
+                                class="fa-solid fa-copy me-2"></i></span>Copy link to clipboard</a></li>
+            </ul>
+        </div>`;
+    }
+
+    function mobileCheck() {
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            console.log(vw);
+            if (vw < 480)
+                return 1;
+            else
+                return 0;
+        };
+</script>

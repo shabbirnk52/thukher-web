@@ -1,0 +1,13 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 7,
+  "projectName": "GULP_4_BOOTSTRAP_5_STARTER_TEMPLATE",
+  "projectOwner": "MPP",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

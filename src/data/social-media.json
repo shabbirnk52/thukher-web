@@ -1,0 +1,22 @@
+[
+    {
+        "IconClass":"fa-brands fa-facebook",
+        "SocialMediaURL":"#"
+    },
+    {
+        "IconClass":"fa-brands fa-instagram",
+        "SocialMediaURL":"#"
+    },
+    {
+        "IconClass":"fa-brands fa-tiktok",
+        "SocialMediaURL":"#"
+    },
+    {
+        "IconClass":"fa-brands fa-x-twitter",
+        "SocialMediaURL":"#"
+    },
+    {
+        "IconClass":"fa-brands fa-youtube",
+        "SocialMediaURL":"#"
+    }
+]
