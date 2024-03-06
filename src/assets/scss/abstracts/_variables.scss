@@ -14,6 +14,10 @@ $warning: #d8df09;
 $danger: #dd0b1c;
 $dark: #111111; 
 $light: #f5f5f5; 
+
+$theme-gradient: rgba(17, 17, 17, 1),rgba(17, 17, 17, 0);
+$theme-gradient-overlay: rgba(17, 17, 17, 1),rgba(152, 28, 31, 0.5);
+$theme-overlay: rgba(17, 17, 17, 0.5);
 // $body-color:#707070;
 $body-color:#111111;
 $link-color:$body-color;
