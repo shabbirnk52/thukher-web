@@ -178,21 +178,21 @@ h6,
 }
 
 .navbar-dark .navbar-toggler {
-  color: var(--primary) !important;
-  border-color: var(--primary) !important;
+  color: var(--bs-light) !important;
+  border-color: var(--bs-light) !important;
 }
 
 @media (max-width: 991.98px) {
   .sticky-top.navbar-dark {
       position: relative;
-      background: #FFFFFF;
+      background: var(--bs-primary);
   }
 
   .navbar-dark .navbar-nav .nav-link,
   .navbar-dark .navbar-nav .nav-link.show,
   .sticky-top.navbar-dark .navbar-nav .nav-link {
       padding: 10px 0;
-      color: var(--dark);
+      color: var(--bs-light);
   }
 
   .navbar-dark .navbar-brand h1 {
