@@ -643,9 +643,22 @@ h6,
   }
 }
 
-
-/* 5 columns, percentage width */
+/* 2 columns, percentage width */
 .grid-item,
 .grid-sizer {
-  width: calc(100% / 5);
+  width: calc(100% / 2);
+}
+@include media-breakpoint-up(sm) {
+  /* 5 columns, percentage width */
+  .grid-item,
+  .grid-sizer {
+    width: calc(100% / 3);
+  }
+}
+@include media-breakpoint-up(lg) {
+  /* 5 columns, percentage width */
+  .grid-item,
+  .grid-sizer {
+    width: calc(100% / 5);
+  }
 }
