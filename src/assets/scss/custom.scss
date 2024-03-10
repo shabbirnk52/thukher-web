@@ -10,18 +10,16 @@
     flex-direction: column;
   }
 
-.logo-main{
-  display: none;
-}
-.logo-white{
-  display: block;
-}
-  .sticky-top{
+  .navbar{
     .logo-main{
-      display: block;
+      transition: all 0.3s;
+      filter: brightness(0) invert(1);
     }
-    .logo-white{
-      display: none;
+    &.bg-glass{
+      .logo-main{
+        transition: all 0.3s;
+        filter: brightness(1) invert(0);
+      }
     }
   }
 
@@ -29,8 +27,8 @@
 :root {
   --primary: var(--bs-primary);
   --secondary: var(--bs-secondary);
-  --light: #EEF9FF;
-  --dark: #091E3E;
+  --light: var(--bs-light);
+  --dark: var(--bs-dark);
 }
 
 
@@ -107,7 +105,6 @@ h6,
 
 /*** Button ***/
 .btn {
-  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   transition: .5s;
 }
@@ -152,7 +149,6 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-  font-family: 'Nunito', sans-serif;
   position: relative;
   margin-left: 25px;
   // padding: 35px 0;
@@ -163,7 +159,7 @@ h6,
   transition: .5s;
 }
 
-.sticky-top.navbar-dark .navbar-nav .nav-link {
+.bg-glass.navbar-dark .navbar-nav .nav-link {
   // padding: 20px 0;
   color: var(--dark);
 }
@@ -212,7 +208,11 @@ h6,
   
   .sticky-top.navbar-dark {
       position: fixed;
-      background: #FFFFFF;
+      // background: #FFFFFF;
+      background: $glass-color-dark;
+      box-shadow: $glass-shadow;
+      backdrop-filter: $glass-blur;
+      border: $glass-border;
   }
 
   .navbar-dark .navbar-nav .nav-link::before {
@@ -225,7 +225,7 @@ h6,
       background: var(--bs-light);
       transition: .5s;
   }
-  .navbar-dark.sticky-top{
+  .navbar-dark.bg-glass{
     .navbar-nav .nav-link::before {
       background: var(--bs-dark);
     }
@@ -492,6 +492,7 @@ h6,
   .facts {
       position: relative;
       margin-top: -75px;
+      margin-bottom: -110px;
       z-index: 1;
   }
 }
@@ -519,6 +520,132 @@ h6,
 
 @media (min-width: 767.98px) {
   .footer-about {
-      margin-bottom: -75px;
+      // margin-bottom: -75px;
   }
+}
+
+.navbar-dark{
+  transition: all 0.3s;
+  &.sticky-top{
+    transition: all 0.3s;
+  }
+}
+.wow{
+  visibility: visible;
+}
+.bg-glass{
+  background: $glass-color !important;
+  box-shadow: $glass-shadow !important;
+  backdrop-filter: $glass-blur !important;
+  border: $glass-border;
+}
+.bg-glass-primary{
+  background: $glass-primary !important;
+  box-shadow: $glass-shadow !important;
+  backdrop-filter: $glass-blur !important;
+  border: $primary;
+}
+.bg-glass-light{
+  background: $glass-color !important;
+  box-shadow: $glass-shadow !important;
+  backdrop-filter: blur(2px) !important;
+  border: $glass-border;
+}
+.btn-glass{
+  background: $glass-color !important;
+  box-shadow: $glass-shadow !important;
+  backdrop-filter: $glass-blur !important;
+  border: $glass-border;
+  transition: all 0.3s;
+  &:hover{
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 1) !important;
+    backdrop-filter: $glass-blur !important;
+    color: black;
+  }
+}
+
+.bg-rhombus{
+  background-color: var(--bs-body-bg);
+  background-image:  linear-gradient(135deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(225deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(45deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(315deg, transparentize($primary,0.95) 25%, var(--bs-body-bg) 25%);
+  background-position:  26px 0, 26px 0, 0 0, 0 0;
+  background-size: 26px 26px;
+  background-repeat: repeat;
+}
+
+.bg-zigzag{
+  background-color: var(--bs-body-bg);
+  background-image:  linear-gradient(135deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(225deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(45deg, transparentize($primary,0.95) 25%, transparent 25%), linear-gradient(315deg, transparentize($primary,0.95) 25%, var(--bs-body-bg) 25%);
+  background-position:  26px 0, 26px 0, 0 0, 0 0;
+  background-size: 52px 52px;
+  background-repeat: repeat;
+}
+
+.bg-diagonal-3{
+  background-color: var(--bs-body-bg);
+  background-size: 26px 26px;
+  background-image: repeating-linear-gradient(45deg, transparentize($primary,0.95) 0, transparentize($primary,0.95) 2.6px, var(--bs-body-bg) 0, var(--bs-body-bg) 50%);
+}
+
+.btn{
+  text-transform: uppercase;
+}
+
+.filter-white{
+  filter: brightness(0) invert(1);
+}
+
+// [data-after]{
+//   position: relative;
+//   &::after{
+//     content: attr(data-after);
+//     position: absolute;
+//     font-size: 5rem;
+//     opacity: 0.5;
+//     color: $primary;
+//     bottom: 0;
+//     left: 0;
+//     transform: translate(50%);
+//   }
+// }
+
+.portfolio-card{
+  .content{
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%,-50%)!important;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    .innercontent{
+      *{
+        opacity: 0;
+        transition: all 1s ease;
+      }
+    }
+  }
+  &:hover{
+    .content{
+      transition: all 0.5s ease;
+      visibility: visible;
+      opacity: 1;
+      top: 50%;
+      left: 50%;
+      .innercontent{
+        *{
+          opacity: 1;
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+}
+
+
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+  width: calc(100% / 5);
 }
