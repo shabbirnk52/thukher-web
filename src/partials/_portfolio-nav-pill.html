@@ -1,0 +1,7 @@
+<li class="nav-item" role="presentation">
+    <button class="nav-link{{#if Selected}} active{{/if}}" id="portfolio-{{simplify Title}}-tab" data-bs-toggle="pill"
+        data-bs-target="#portfolio-{{simplify Title}}"
+        data-filter-by="{{#ifequal Title 'All'}}*{{else}}.{{simplify Title}}{{/ifequal}}" type="button" role="tab"
+        aria-controls="portfolio-{{simplify Title}}"
+        aria-selected="{{#if Selected}}true{{else}}false{{/if}}">{{Title}}</button>
+</li>

@@ -1,0 +1,96 @@
+<!-- Portfolio Start -->
+<div class="container-fluid py-3 py-lg-5 wow fadeInUp px-0" data-wow-delay="0.1s">
+    <div class="row">
+        <div class="col-12">
+            {{>_section-title Title="What we have done" Subtitle="We have helped business grow 10x"}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-3" id="portfolio-tab" role="tablist">
+                {{>_portfolio-nav-pill Title="All" Selected=1}}
+                {{>_portfolio-nav-pill Title="Apps"}}
+                {{>_portfolio-nav-pill Title="Websites"}}
+                {{>_portfolio-nav-pill Title="Dashboards"}}
+            </ul>
+        </div>
+    </div>
+    <div class="row g-0">
+        {{!--<div class="col-12 portfolio-container grid">
+            {{#repeat 6}}
+            {{#ifequal @index 3}}
+            <div class="grid-item adil-{{@index}}">
+                <div class="portfolio-card position-relative">
+                    <div class="image-container w-100">
+                        <img src="https://images.placeholders.dev/?width=400&height=300&bgColor=%23{{add @index 2}}0{{add @index 3}}"
+                            class="h-100 w-100 object-fit-cover" alt="Portfolio Background Image">
+                    </div>
+                    <div class="content position-absolute z-1">
+                        <img src="https://images.placeholders.dev/?width=100&height=100&bgColor=%23ff{{add @index 2}}"
+                            class="mb-3" alt="">
+                        <h6>Client Name</h6>
+                        <h4>Project Title</h4>
+                        <p>Description about the project</p>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class="grid-item adil-{{@index}}">
+                <div class="portfolio-card position-relative">
+                    <div class="image-container w-100">
+                        <img src="https://images.placeholders.dev/?width=800&height=400&bgColor=%23{{add @index 2}}0{{add @index 3}}"
+                            class="h-100 w-100 object-fit-cover" alt="Portfolio Background Image">
+                    </div>
+                    <div class="content position-absolute z-1">
+                        <img src="https://images.placeholders.dev/?width=100&height=100&bgColor=%23ff{{add @index 2}}"
+                            class="mb-3" alt="">
+                        <h6>Client Name</h6>
+                        <h4>Project Title</h4>
+                        <p>Description about the project</p>
+                    </div>
+                </div>
+            </div>
+            {{/ifequal}}
+            {{/repeat}}
+        </div>--}}
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="ffa594" FilterType="Websites"}}
+            {{>_portfolio-item Height="512" Width="288" BgColor="abc594" FilterType="Apps"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="cde594" FilterType="Websites"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="1d4522" FilterType="Apps"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="145594" FilterType="Dashboards"}}
+            {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
+            {{>_portfolio-item Height="512" Width="288" BgColor="ffa594" FilterType="Dashboards"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="abc594" FilterType="Dashboards"}}
+            {{>_portfolio-item Height="288" Width="512" BgColor="cde594" FilterType="Websites"}}
+            {{>_portfolio-item Height="512" Width="288" BgColor="1d4522" FilterType="Websites"}}
+            {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
+        </div>
+
+    </div>
+</div>
+<!-- Portfolio Start -->
+
+<script>
+    var $grid = $('.grid');
+    $(function () {
+        initIsotope();
+    });
+    function initIsotope() {
+        $grid.isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+        $grid.imagesLoaded().progress(function () {
+            $grid.isotope('layout');
+        });
+        $("[data-filter-by]").on("click", function () {
+            $grid.isotope({ filter: $(this).attr("data-filter-by") });
+        });
+    }
+</script>
