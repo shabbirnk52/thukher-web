@@ -1,12 +1,14 @@
 <!-- About Start -->
-<div class="container-fluid pt-5 pb-3 py-md-5 pt-lg-0 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container pt-0 pb-3 py-md-5 pt-lg-0">
-        <div class="row g-5">
+<div class="container-fluid py-lg-5 py-3 wow fadeInUp bg-diagonal-3" data-wow-delay="0.1s">
+    <div class="container{{#ifpage 'index'}} pt-3 pt-lg-5 mt-5{{/ifpage}}">
+        <div class="row g-5{{#ifpage 'index'}} pt-3{{/ifpage}}">
             <div class="col-lg-7">
-                <div class="section-title position-relative pb-3 mb-3 mb-lg-5">
+                {{>_section-title Title="About Us" Align="start" Subtitle="The Best IT Solution With 10 Years of
+                Experience"}}
+                <!-- <div class="section-title position-relative pb-3 mb-3 mb-lg-5 mt-5 pt-5">
                     <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
                     <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
-                </div>
+                </div> -->
                 <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet
                     diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita
                     duo justo et tempor eirmod magna dolore erat amet</p>
