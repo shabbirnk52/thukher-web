@@ -13,9 +13,9 @@ $(document).ready(function () {
   // hookMenuLinkDisplay();
   hideLoader();
   // For DEVELOPMENT PURPOSES ONLY
-  // if ($('html').attr('dir') == 'rtl'){
-  //   $(".language-switch").html("English");
-  // }
+  if ($('html').attr('dir') == 'rtl') {
+    $(".language-switch").html("English");
+  }
 
   setTimeout(function () {
     if ($('html').attr('dir') == 'rtl') {
@@ -321,6 +321,14 @@ function themeInit() {
       $('.navbar').addClass('sticky-top shadow-sm');
     } else {
       $('.navbar').removeClass('sticky-top shadow-sm');
+    }
+  });
+  // Glassy Navbar
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $("#header-carousel").height()) {
+      $('.navbar').addClass('bg-glass');
+    } else {
+      $('.navbar').removeClass('bg-glass');
     }
   });
 
