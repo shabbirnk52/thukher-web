@@ -1,0 +1,105 @@
+[
+    {
+        "Title": "Adhari Mobile App",
+        "ImageURL": "assets/img/portfolio/adhari-app.png",
+        "BackgroundImage": "assets/img/portfolio/adhari-bg.jpg",
+        "Height": "512",
+        "Width": "288",
+        "LightBgColor": "var(--bs-gray-200)",
+        "FilterType": "Apps",
+        "ClientName": "Adhari",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Adhari Web",
+        "ImageURL": "assets/img/portfolio/adhari-web.png",
+        "BackgroundImage": "assets/img/portfolio/adhari-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-400)",
+        "FilterType": "Websites",
+        "ClientName": "Adhari",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Mal3ab Mobile App",
+        "ImageURL": "assets/img/portfolio/mal3ab-app.png",
+        "BackgroundImage": "assets/img/portfolio/mal3ab-bg.jpg",
+        "Height": "512",
+        "Width": "288",
+        "LightBgColor": "var(--bs-gray-300)",
+        "FilterType": "Apps",
+        "ClientName": "Mal3ab",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Mal3ab Web",
+        "ImageURL": "assets/img/portfolio/mal3ab-web.png",
+        "BackgroundImage": "assets/img/portfolio/mal3ab-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Websites",
+        "ClientName": "Mal3ab",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Mal3ab Mobile App",
+        "ImageURL": "assets/img/portfolio/mal3ab-app-1.png",
+        "BackgroundImage": "assets/img/portfolio/mal3ab-bg.jpg",
+        "Height": "512",
+        "Width": "288",
+        "LightBgColor": "var(--bs-gray-200)",
+        "FilterType": "Apps",
+        "ClientName": "Mal3ab",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Twarrad Mobile App",
+        "ImageURL": "assets/img/portfolio/twarrad-app.png",
+        "BackgroundImage": "assets/img/portfolio/twarrad-bg.jpg",
+        "Height": "512",
+        "Width": "288",
+        "LightBgColor": "var(--bs-gray-300)",
+        "FilterType": "Apps",
+        "ClientName": "Twarrad",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Twarrad Web",
+        "ImageURL": "assets/img/portfolio/twarrad-web.png",
+        "BackgroundImage": "assets/img/portfolio/twarrad-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Websites",
+        "ClientName": "Twarrad",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Shalayhna Web",
+        "ImageURL": "assets/img/portfolio/shalayhna-web.png",
+        "BackgroundImage": "assets/img/portfolio/shalayhna-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Websites",
+        "ClientName": "Shalayhna",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    },
+    {
+        "Title": "Shalayhna Mobile App",
+        "ImageURL": "assets/img/portfolio/shalayhna-app.png",
+        "BackgroundImage": "assets/img/portfolio/shalayhna-bg.jpg",
+        "Height": "512",
+        "Width": "288",
+        "LightBgColor": "var(--bs-gray-300)",
+        "FilterType": "Apps",
+        "ClientName": "Shalayhna",
+        "ClientLogo": "https://images.placeholders.dev/?width=100&height=100&textColor=%23000&bgColor=%23000"
+    }
+]
