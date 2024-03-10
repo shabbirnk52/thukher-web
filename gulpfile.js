@@ -146,6 +146,8 @@ function jsVendor() {
     'vendors/waypoints/waypoints.min.js',
     'vendors/counterup/counterup.min.js',
     'vendors/owlcarousel/owl.carousel.min.js',
+    // 'vendors/mixitup/mixitup.min.js',
+    'vendors/isotope/isotope.min.js',
     // 'node_modules/slick-carousel/slick/slick.min.js',
     // 'node_modules/slick-animation/slick-animation.min.js',
     // 'node_modules/bs5-lightbox/dist/index.bundle.min.js',
