@@ -627,16 +627,18 @@ h6,
     }
   }
   &:hover{
-    .content{
-      transition: all 0.5s ease;
-      visibility: visible;
-      opacity: 1;
-      top: 50%;
-      left: 50%;
-      .innercontent{
-        *{
-          opacity: 1;
-          transition: all 1s ease;
+    @include media-breakpoint-up(sm){
+      .content{
+        transition: all 0.5s ease;
+        visibility: visible;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        .innercontent{
+          *{
+            opacity: 1;
+            transition: all 1s ease;
+          }
         }
       }
     }
@@ -648,11 +650,17 @@ h6,
 .grid-sizer {
   width: calc(100% / 2);
 }
+.grid-item-x2{
+  width: calc(100% / 2);
+}
 @include media-breakpoint-up(sm) {
   /* 5 columns, percentage width */
   .grid-item,
   .grid-sizer {
     width: calc(100% / 3);
+  }
+  .grid-item-x2{
+    width: 100%;
   }
 }
 @include media-breakpoint-up(lg) {
@@ -661,4 +669,48 @@ h6,
   .grid-sizer {
     width: calc(100% / 5);
   }
+  .grid-item-x2{
+    width: calc(200% / 5);
+  }
+}
+
+.portfolio-card{
+  .bg-image-container{
+    background-position: 0% center;
+    background-size: cover;
+    animation: ambientswipereverse 2s linear 0s 1;
+  }
+  &:hover{
+    .bg-image-container{
+      transition: all 0.3s linear;
+      animation: ambientswipe 10s linear 0s 1;
+    } 
+    .image-container{
+      background-color: transparent !important;
+    }
+  }
+}
+
+@keyframes ambientswipe {
+  0%{
+    opacity: 0;
+    background-position: 0% center;
+  }
+  10%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    background-position: 100% center;
+  }
+}
+
+@keyframes ambientswipereverse {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    background-position: 0% center;
+   }
 }

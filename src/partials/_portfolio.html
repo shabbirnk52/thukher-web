@@ -7,7 +7,7 @@
     </div>
     <div class="row g-0">
         <div class="col-12">
-            <ul class="nav nav-pills justify-content-center mb-3" id="portfolio-tab" role="tablist">
+            <ul class="nav nav-pills justify-content-center mb-5" id="portfolio-tab" role="tablist">
                 {{>_portfolio-nav-pill Title="All" Selected=1}}
                 {{>_portfolio-nav-pill Title="Apps"}}
                 {{>_portfolio-nav-pill Title="Websites"}}
@@ -19,6 +19,38 @@
         <div class="col-12">
             <div class="grid">
                 <div class="grid-sizer"></div>
+                {{#each portfolio}}
+                {{>_portfolio-item}}
+                {{/each}}
+                {{!--
+                {{#repeat 4}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/adhari-app.png" Height="512" Width="288"
+                BgColor="145594" FilterType="Apps"
+                LightBgColor="var(--bs-gray-400)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/adhari-web.png" GridClass="grid-item-x2"
+                Height="288" Width="512"
+                BgColor="145594" FilterType="Websites"
+                LightBgColor="var(--bs-gray-300)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app.png" Height="512" Width="288"
+                BgColor="145594" FilterType="Apps"
+                LightBgColor="var(--bs-gray-200)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app-1.png" Height="512" Width="288"
+                BgColor="145594" FilterType="Apps"
+                LightBgColor="var(--bs-gray-200)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-web.png" GridClass="grid-item-x2"
+                Height="288" Width="512"
+                BgColor="145594" FilterType="Websites"
+                LightBgColor="var(--bs-gray-300)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app-1.png" Height="512" Width="288"
+                BgColor="145594" FilterType="Apps"
+                LightBgColor="var(--bs-gray-200)"}}
+                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-web.png" GridClass="grid-item-x2"
+                Height="288" Width="512"
+                BgColor="145594" FilterType="Websites"
+                LightBgColor="var(--bs-gray-300)"}}
+                {{/repeat}}
+                --}}
+                {{!--
                 {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
                 {{>_portfolio-item Height="288" Width="512" BgColor="ffa594" FilterType="Websites"}}
                 {{>_portfolio-item Height="512" Width="288" BgColor="abc594" FilterType="Apps"}}
@@ -31,6 +63,7 @@
                 {{>_portfolio-item Height="288" Width="512" BgColor="cde594" FilterType="Websites"}}
                 {{>_portfolio-item Height="512" Width="288" BgColor="1d4522" FilterType="Websites"}}
                 {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
+                --}}
             </div>
         </div>
     </div>
