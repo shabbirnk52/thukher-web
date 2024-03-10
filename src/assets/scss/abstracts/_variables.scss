@@ -18,6 +18,14 @@ $light: #f5f5f5;
 $theme-gradient: rgba(17, 17, 17, 1),rgba(17, 17, 17, 0);
 $theme-gradient-overlay: rgba(17, 17, 17, 1),rgba(152, 28, 31, 0.5);
 $theme-overlay: rgba(17, 17, 17, 0.5);
+
+$glass-color: rgba(255, 255, 255, 0.35);
+$glass-primary: rgba(152, 28, 30, 0.8);
+$glass-color-dark: rgba(119, 119, 119, 0.35);
+$glass-shadow:0 8px 10px rgba(0, 0, 0, 0.15);
+$glass-blur:blur(10px);
+$glass-border:1px solid rgba(255, 255, 255, 0.65);
+
 // $body-color:#707070;
 $body-color:#111111;
 $link-color:$body-color;
@@ -38,7 +46,7 @@ $gray-900: #212529 !default;
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $body-font-size:              1.15rem;
 $h6-font-size:                $font-size-base;
-$font-size-multiplier:        1.2;
+$font-size-multiplier:        1.33;
 $h5-font-size:                $h6-font-size * $font-size-multiplier;
 $h4-font-size:                $h5-font-size * $font-size-multiplier;
 $h3-font-size:                $h4-font-size * $font-size-multiplier;
@@ -47,7 +55,7 @@ $h1-font-size:                $h2-font-size * $font-size-multiplier;
 
 $headings-font-weight: 900;
 
-$font-family:           "Intro Alt" , "GE Dinar One" ;
+$font-family:           "Readex Pro", sans-serif;
 $enable-negative-margins: true;
 
 $grid-breakpoints: (
@@ -89,3 +97,6 @@ $theme-colors: (
   "dark":       $dark
 );
 
+$btn-border-radius:           0;
+$btn-border-radius-sm:        0;
+$btn-border-radius-lg:        0;
