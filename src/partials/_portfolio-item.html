@@ -1,21 +1,23 @@
-<div class="grid-item {{GridClass}} {{simplify FilterType}}">
+<div class="grid-item border border-5 border-gray-400 {{GridClass}} {{FilterType}}">
     <a href="javascript:;">
         <div class="portfolio-card position-relative">
             <div class="bg-image-container position-absolute h-100 w-100 z-n1"
                 style="background-image: url({{BackgroundImage}});">
             </div>
-            <div class="image-container w-100" style="background-color: {{LightBgColor}};">
-                <img src="{{ImageURL}}" class="h-100 w-100 object-fit-cover" width="{{Width}}" height="{{Height}}"
+            <div class="image-container w-100 d-flex justify-content-center align-items-center p-3 p-xl-4 p-xxl-5"
+                style="background-color: {{LightBgColor}};">
+                <img src="{{ImageURL}}" class="portfolio-img rounded rounded-3" width="{{Width}}" height="{{Height}}"
                     alt="Portfolio Background Image">
             </div>
             <div class="content position-absolute d-flex flex-column justify-content-end z-1 p-3">
-                <div class="innercontent bg-glass d-flex flex-column p-3" style="max-width: 400px;min-width: 300px;">
+                <div class="innercontent bg-glass d-flex flex-column p-2 mx-auto text-center"
+                    style="max-width: 400px;min-width: 300px;">
                     <div class="row g-2">
-                        <div class="col-2">
+                        <!-- <div class="col-2">
                             <img src="{{ClientLogo}}" class="img-fluid" height="100" width="100"
                                 alt="{{ClientName}} Logo">
-                        </div>
-                        <div class="col-10 d-flex flex-column justify-content-center">
+                        </div> -->
+                        <div class="col-12 d-flex flex-column justify-content-center">
                             <h4 class="h6 fw-bold text-primary text-uppercase mb-0">{{ClientName}}</h4>
                             <h5 class="text-body fw-bold mt-1 mb-0">{{Title}}</h5>
                         </div>

@@ -609,7 +609,26 @@ h6,
 //   }
 // }
 
+.grid-item{
+  .portfolio-img{
+    height: 512px;
+  }
+  &.grid-item-x2{
+    .portfolio-img{
+      height: 288px;
+    }
+  }
+}
 .portfolio-card{
+  .portfolio-img{
+    object-fit: cover;
+    object-position: top;
+    transition: all 18s ease;
+    // height: 288px;
+    // width: 100%;
+    aspect-ratio: 16/9;
+
+  }
   .content{
     transition: all 0.5s ease;
     opacity: 0;
@@ -620,6 +639,8 @@ h6,
     width: 100%;
     height: 100%;
     .innercontent{
+      transition: transform 1s ease;
+      transform: translateY(50%);
       *{
         opacity: 0;
         transition: all 1s ease;
@@ -627,6 +648,9 @@ h6,
     }
   }
   &:hover{
+    .portfolio-img{
+      object-position: bottom;
+    }
     @include media-breakpoint-up(sm){
       .content{
         transition: all 0.5s ease;
@@ -635,6 +659,9 @@ h6,
         top: 50%;
         left: 50%;
         .innercontent{
+      transition: transform 1s ease;
+
+          transform: translateY(0);
           *{
             opacity: 1;
             transition: all 1s ease;
@@ -676,17 +703,43 @@ h6,
 
 .portfolio-card{
   .bg-image-container{
-    background-position: 0% center;
+    // filter: blur(5px);
+    // background-position: 0% center;
     background-size: cover;
-    animation: ambientswipereverse 2s linear 0s 1;
+    animation: ambientswipereverse 0.3s linear 0s 1 forwards;
+    position: relative;
+    &::before{
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: var(--bs-dark);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      z-index: 1;
+    }
+  }
+  .image-container{
+    transition: all 0.3s ease;
+    img{
+      // transform: scale(0.95);
+      // transition: transform 1s ease;
+    }
   }
   &:hover{
     .bg-image-container{
       transition: all 0.3s linear;
-      animation: ambientswipe 10s linear 0s 1;
+      animation: ambientswipe 20s linear 0s 1 forwards;
     } 
     .image-container{
+      transition: all 0.3s ease;
       background-color: transparent !important;
+      img{
+        // transform: scale(1.1);
+        // transition: transform 1s ease;
+      }
     }
   }
 }
@@ -711,6 +764,6 @@ h6,
   }
   100%{
     opacity: 0;
-    background-position: 0% center;
+    // background-position: 0% center;
    }
 }

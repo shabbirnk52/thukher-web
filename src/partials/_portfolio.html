@@ -12,58 +12,29 @@
                 {{>_portfolio-nav-pill Title="Apps"}}
                 {{>_portfolio-nav-pill Title="Websites"}}
                 {{>_portfolio-nav-pill Title="Dashboards"}}
+                {{>_portfolio-nav-pill Title="Booking"}}
+                {{>_portfolio-nav-pill Title="Ecommerce"}}
+                {{>_portfolio-nav-pill Title="Entertainment"}}
+                {{>_portfolio-nav-pill Title="Corporate"}}
             </ul>
         </div>
     </div>
     <div class="row g-0">
         <div class="col-12">
-            <div class="grid">
+            <div class="grid mx-auto border border-4 border-bottom-0 border-start-0 border-end-0 border-gray-300">
+                {{!--
+                {{#repeat 50}}
+                <div class="box adil"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box box-2 adil"></div>
+                <div class="box"></div>
+                {{/repeat}}
+                --}}
                 <div class="grid-sizer"></div>
                 {{#each portfolio}}
                 {{>_portfolio-item}}
                 {{/each}}
-                {{!--
-                {{#repeat 4}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/adhari-app.png" Height="512" Width="288"
-                BgColor="145594" FilterType="Apps"
-                LightBgColor="var(--bs-gray-400)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/adhari-web.png" GridClass="grid-item-x2"
-                Height="288" Width="512"
-                BgColor="145594" FilterType="Websites"
-                LightBgColor="var(--bs-gray-300)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app.png" Height="512" Width="288"
-                BgColor="145594" FilterType="Apps"
-                LightBgColor="var(--bs-gray-200)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app-1.png" Height="512" Width="288"
-                BgColor="145594" FilterType="Apps"
-                LightBgColor="var(--bs-gray-200)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-web.png" GridClass="grid-item-x2"
-                Height="288" Width="512"
-                BgColor="145594" FilterType="Websites"
-                LightBgColor="var(--bs-gray-300)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-app-1.png" Height="512" Width="288"
-                BgColor="145594" FilterType="Apps"
-                LightBgColor="var(--bs-gray-200)"}}
-                {{>_portfolio-item Real=1 ImageURL="assets/img/portfolio/mal3ab-web.png" GridClass="grid-item-x2"
-                Height="288" Width="512"
-                BgColor="145594" FilterType="Websites"
-                LightBgColor="var(--bs-gray-300)"}}
-                {{/repeat}}
-                --}}
-                {{!--
-                {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="ffa594" FilterType="Websites"}}
-                {{>_portfolio-item Height="512" Width="288" BgColor="abc594" FilterType="Apps"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="cde594" FilterType="Websites"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="1d4522" FilterType="Apps"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="145594" FilterType="Dashboards"}}
-                {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
-                {{>_portfolio-item Height="512" Width="288" BgColor="ffa594" FilterType="Dashboards"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="abc594" FilterType="Dashboards"}}
-                {{>_portfolio-item Height="288" Width="512" BgColor="cde594" FilterType="Websites"}}
-                {{>_portfolio-item Height="512" Width="288" BgColor="1d4522" FilterType="Websites"}}
-                {{>_portfolio-item Height="512" Width="288" BgColor="145594" FilterType="Apps"}}
-                --}}
             </div>
         </div>
     </div>
@@ -80,8 +51,9 @@
             itemSelector: '.grid-item',
             percentPosition: true,
             masonry: {
-                columnWidth: '.grid-sizer'
-            }
+                columnWidth: '.grid-sizer',
+                fitWidth: true
+            },
         });
         $grid.imagesLoaded().progress(function () {
             $grid.isotope('layout');
