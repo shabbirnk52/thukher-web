@@ -609,24 +609,81 @@ h6,
 //   }
 // }
 
-.grid-item{
-  .portfolio-img{
-    height: 512px;
+
+// Portfolio Grid
+.grid{
+  overflow-x: hidden;
+  @include media-breakpoint-up(xl){
+    overflow-x: unset;
   }
-  &.grid-item-x2{
+  .grid-item{
     .portfolio-img{
-      height: 288px;
+        aspect-ratio: 9/16;
+    }
+    &.grid-item-x2{
+      .portfolio-img{
+        aspect-ratio: 16/9;
+      }
     }
   }
-}
+  /* 2 columns, percentage width */
+  .grid-item,
+  .grid-sizer {
+    width: calc(100% / 2);
+  }
+  .grid-item-x2{
+    width: 100%;
+  }
+  // IPad
+  @include media-breakpoint-up(sm) {
+    /* 3 columns, percentage width */
+    .grid-item,
+    .grid-sizer {
+      width: calc(100% / 3);
+    }
+    .grid-item-x2{
+      width: 100%;
+    }
+  }
+  // Ipad
+  @include media-breakpoint-up(md) {
+    /* 3 columns, percentage width */
+    .grid-item,
+    .grid-sizer {
+      width: calc(100% / 3);
+    }
+    .grid-item-x2{
+      width: 100%;
+    }
+  }
+  // Ipad Pro
+  @include media-breakpoint-up(lg) {
+    /* 5 columns, percentage width */
+    .grid-item,
+    .grid-sizer {
+      width: calc(100% / 4);
+    }
+    .grid-item-x2{
+      width: calc(200% / 4);
+    }
+  }
+  // Laptops
+  @include media-breakpoint-up(xl) {
+    /* 5 columns, percentage width */
+    .grid-item,
+    .grid-sizer {
+      width: calc(100% / 5);
+    }
+    .grid-item-x2{
+      width: calc(200% / 5);
+    }
+  }
+  
 .portfolio-card{
   .portfolio-img{
     object-fit: cover;
     object-position: top;
     transition: all 18s ease;
-    // height: 288px;
-    // width: 100%;
-    aspect-ratio: 16/9;
 
   }
   .content{
@@ -671,34 +728,6 @@ h6,
     }
   }
 }
-
-/* 2 columns, percentage width */
-.grid-item,
-.grid-sizer {
-  width: calc(100% / 2);
-}
-.grid-item-x2{
-  width: calc(100% / 2);
-}
-@include media-breakpoint-up(sm) {
-  /* 5 columns, percentage width */
-  .grid-item,
-  .grid-sizer {
-    width: calc(100% / 3);
-  }
-  .grid-item-x2{
-    width: 100%;
-  }
-}
-@include media-breakpoint-up(lg) {
-  /* 5 columns, percentage width */
-  .grid-item,
-  .grid-sizer {
-    width: calc(100% / 5);
-  }
-  .grid-item-x2{
-    width: calc(200% / 5);
-  }
 }
 
 .portfolio-card{

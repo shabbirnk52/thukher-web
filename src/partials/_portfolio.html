@@ -11,17 +11,21 @@
                 {{>_portfolio-nav-pill Title="All" Selected=1}}
                 {{>_portfolio-nav-pill Title="Apps"}}
                 {{>_portfolio-nav-pill Title="Websites"}}
+                {{!--
                 {{>_portfolio-nav-pill Title="Dashboards"}}
+                --}}
                 {{>_portfolio-nav-pill Title="Booking"}}
                 {{>_portfolio-nav-pill Title="Ecommerce"}}
+                {{!--
                 {{>_portfolio-nav-pill Title="Entertainment"}}
                 {{>_portfolio-nav-pill Title="Corporate"}}
+                --}}
             </ul>
         </div>
     </div>
     <div class="row g-0">
         <div class="col-12">
-            <div class="grid mx-auto border border-4 border-bottom-0 border-start-0 border-end-0 border-gray-300">
+            <div class="grid border border-4 border-bottom-0 border-start-0 border-end-0 border-gray-300">
                 {{!--
                 {{#repeat 50}}
                 <div class="box adil"></div>
@@ -57,6 +61,15 @@
         });
         $grid.imagesLoaded().progress(function () {
             $grid.isotope('layout');
+        });
+        // Layout Isotope on viewport size change
+        $(window).on('resize', function () {
+            $grid.isotope('layout');
+            for (var i = 0; i < 5; i++) {
+                setTimeout(function () {
+                    $grid.isotope('layout');
+                }, 200);
+            }
         });
         $("[data-filter-by]").on("click", function () {
             $grid.isotope({ filter: $(this).attr("data-filter-by") });
