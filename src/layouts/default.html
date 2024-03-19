@@ -77,18 +77,18 @@
       {{#ifpage 'index'}}
       {{>_carousel}}
       {{/ifpage}}
-      {{#unlesspage 'index'}}
-      <div class="container-fluid bg-header bg-header-gradient">
-        <div class="row py-5">
-          <div class="col-12 mt-lg-5 text-center">
-            <h1 class="display-4 text-white animated zoomIn">{{title}}</h1>
-            {{>_breadcrumbs}}
-          </div>
-        </div>
-      </div>
-      {{/unlesspage}}
     </div>
   </header>
+  {{#unlesspage 'index'}}
+  <div class="container-fluid bg-header bg-header-gradient">
+    <div class="row py-5">
+      <div class="col-12 mt-lg-5 text-center">
+        <h1 class="display-4 text-white animated zoomIn">{{title}}</h1>
+        {{>_breadcrumbs}}
+      </div>
+    </div>
+  </div>
+  {{/unlesspage}}
   <main role="main">
     {{> body}}
   </main>
