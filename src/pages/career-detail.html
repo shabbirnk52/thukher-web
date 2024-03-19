@@ -9,8 +9,7 @@ breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-12">
-                <h1>UI/UX Engineer</h1>
-                <h4 class="fw-bold my-3 ">Job Description</h4>
+                {{>_section-title Title="Job Description" Subtitle="UI/UX Engineer" Align="start"}}
                 <div class="summernote-content">
                     <p><b>Key Responsibilities:</b></p>
                     <p>
@@ -50,6 +49,32 @@ breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL
                         Ability to meet deadlines and work well under pressure.
                         Knowledge of tax regulations and compliance requirements.
                         Ethical behavior and a commitment to confidentiality in handling financial data.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-6 col-xxl-8">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h3>
+                            Application Form
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        {{>_input-field Label="Name" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
+                    </div>
+                    <div class="col-md-6">
+                        {{>_input-field Label="Email" Type="email" FloatingLabel=1 Classes="border-0 bg-light
+                        px-4"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_input-field Label="Subject" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_textarea-field Label="Message" FloatingLabel=1 Classes="border-0 bg-light px-4"
+                        NameId="Message"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_button-a ButtonClasses="btn-primary" ButtonText="Submit"}}
+                    </div>
                 </div>
             </div>
         </div>
