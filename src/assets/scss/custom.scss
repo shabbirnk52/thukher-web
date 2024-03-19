@@ -796,3 +796,15 @@ h6,
     // background-position: 0% center;
    }
 }
+
+
+.form-floating > .form-control:focus ~ label::after, .form-floating > .form-control:not(:placeholder-shown) ~ label::after, .form-floating > .form-control-plaintext ~ label::after, .form-floating > .form-select ~ label::after{
+  background: transparent;
+}
+.form-floating{
+  > .form-control{
+    ~ label{
+      left: 8px;
+    }
+  }
+}
