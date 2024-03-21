@@ -2,7 +2,14 @@
 
 $(document).ready(function () {
   // showLoader();
+  // Initiate the wowjs JUST ONCE
+  console.log("WOW Init", new WOW().init());
+  initAllModules();
+});
+
+function initAllModules() {
   themeInit();
+  initIsotope();
   // initUserThemePreference();
   // initializeSelect2();
   // initializeOffcanvas();
@@ -24,13 +31,8 @@ $(document).ready(function () {
       });
     }
   }, 100);
-
-  // addInvalidFeedbackStyle();
-  setTimeout(function () {
-    // hideLoader();
-  }, 2000);
   console.log("document ready");
-});
+}
 function hookMenuLinkDisplay() {
   if (window.outerWidth < 1200) {
     $(".main-menu-link a").on("click", function (e) {
@@ -311,10 +313,6 @@ function themeInit() {
   };
   spinner();
 
-
-  // Initiate the wowjs
-  console.log(new WOW().init());
-
   // Sticky Navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 45) {
@@ -507,5 +505,33 @@ function initUserThemePreference() {
         }
       }
     }
+  });
+}
+
+function initIsotope() {
+
+  var $grid = $('.grid');
+  $grid.isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer',
+      // fitWidth: true
+    },
+  });
+  $grid.imagesLoaded().progress(function () {
+    $grid.isotope('layout');
+  });
+  // Layout Isotope on viewport size change
+  // $(window).on('resize', function () {
+  //     $grid.isotope('layout');
+  //     for (var i = 0; i < 5; i++) {
+  //         setTimeout(function () {
+  //             $grid.isotope('layout');
+  //         }, 200);
+  //     }
+  // });
+  $("[data-filter-by]").on("click", function () {
+    $grid.isotope({ filter: $(this).attr("data-filter-by") });
   });
 }
