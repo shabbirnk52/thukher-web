@@ -507,7 +507,10 @@ h6,
 
 .bg-header {
   background: linear-gradient($theme-gradient),url(../img/MP-white.svg) 100% center no-repeat $primary;
-  background-size: 40%;
+  background-size: 75%;
+  @include media-breakpoint-up(md){
+    background-size: 40%;
+  }
 }
 
 .link-animated a {
