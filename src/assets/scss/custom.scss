@@ -1,14 +1,24 @@
 [type=tel], [type=url], [type=email], [type=number] {
-    direction: ltr !important;
-  }
+  direction: ltr !important;
+}
 
-  body{
-    min-height: 100vh;
-    max-width: 100vw;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+body{
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+// To Hide the "Choose File" Button
+input[type="file"] {
+  &::-webkit-file-upload-button {
+    display: none;
   }
+  &::file-selector-button {
+    display: none;
+  }
+}
 
   .navbar{
     .logo-main{
