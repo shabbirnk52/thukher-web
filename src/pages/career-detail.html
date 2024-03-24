@@ -58,20 +58,21 @@ breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL
                             Application Form
                         </h3>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12">
                         {{>_input-field Label="Name" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12">
+                        {{>_input-field Label="Mobile Number" Type="number" FloatingLabel=1 Classes="border-0 bg-light
+                        px-4"}}
+                    </div>
+                    <div class="col-12">
                         {{>_input-field Label="Email" Type="email" FloatingLabel=1 Classes="border-0 bg-light
                         px-4"}}
                     </div>
                     <div class="col-12">
-                        {{>_input-field Label="Subject" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
+                        {{>_input-field Label="Upload CV" Type="file" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
                     </div>
-                    <div class="col-12">
-                        {{>_textarea-field Label="Message" FloatingLabel=1 Classes="border-0 bg-light px-4"
-                        NameId="Message"}}
-                    </div>
+
                     <div class="col-12">
                         {{>_button-a ButtonClasses="btn-primary" ButtonText="Submit"}}
                     </div>
