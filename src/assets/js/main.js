@@ -323,7 +323,7 @@ function themeInit() {
   });
   // Glassy Navbar
   $(window).scroll(function () {
-    if ($(this).scrollTop() > $("#header-carousel").height()) {
+    if ($(this).scrollTop() > $("#header-carousel,.page-title").height()) {
       $('.navbar').addClass('bg-glass');
     } else {
       $('.navbar').removeClass('bg-glass');
@@ -533,5 +533,18 @@ function initIsotope() {
   // });
   $("[data-filter-by]").on("click", function () {
     $grid.isotope({ filter: $(this).attr("data-filter-by") });
+  });
+
+  var portfolioIsotope = $(".portfolio-container").isotope({
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
+  });
+  portfolioIsotope.imagesLoaded().progress(function () {
+    portfolioIsotope.isotope('layout');
+  });
+  $("#portfolio-flters li").on("click", function () {
+    $("#portfolio-flters li").removeClass("active");
+    $(this).addClass("active");
+    portfolioIsotope.isotope({ filter: $(this).data("filter") });
   });
 }
