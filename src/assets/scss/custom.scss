@@ -216,6 +216,12 @@ input[type="file"] {
     width: 100%;
     height: 100%;
     .innercontent{
+      max-width: 100%;
+      min-width: 100px;
+      @include media-breakpoint-up(md){
+        max-width: 400px;
+        min-width: 300px;
+      }
       // transition: transform 1s ease;
       // transform: translateY(50%);
       // *{
