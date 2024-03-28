@@ -1,0 +1,22 @@
+[
+    {
+        "Title": "Telecom - VAS",
+        "ShortDescription": "Unlock next-level telecom services with our VAS solutions: Content Aggregation, Direct Operator Billing, Service Delivery, and Video Streaming Platforms – revolutionize your offerings today.",
+        "Icon": "<i class='fas fa-tower-broadcast text-light'></i>"
+    },
+    {
+        "Title": "Marketing",
+        "ShortDescription": "Revolutionize marketing with SMS campaign management, location-based marketing, smartlinks, newsletters, and digital solutions for unparalleled brand impact.",
+        "Icon": "<i class='fas fa-bullseye text-light'></i>"
+    },
+    {
+        "Title": "Design & Development",
+        "ShortDescription": "Empower your business with our design and development services, offering bespoke solutions in web, mobile applications, broadcast media, and tailor-made software, ensuring innovation and excellence every step of the way.",
+        "Icon": "<i class='fas fa-code text-light'></i>"
+    },
+    {
+        "Title": "Enterprise",
+        "ShortDescription": "Elevate your enterprise with our comprehensive services: consultancy expertise, hosted solutions, brand management, and seamless enterprise application integration, ensuring optimized operations and sustained growth.",
+        "Icon": "<i class='fas fa-server text-light'></i>"
+    }
+]
