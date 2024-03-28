@@ -511,11 +511,20 @@ function initUserThemePreference() {
 function initIsotope() {
 
   var $grid = $('.grid');
+  // $grid.isotope({
+  //   itemSelector: '.grid-item',
+  //   percentPosition: true,
+  //   masonry: {
+  //     columnWidth: '.grid-sizer',
+  //     // fitWidth: true
+  //   },
+  // });
   $grid.isotope({
     itemSelector: '.grid-item',
     percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer',
+    layoutMode: 'packery',
+    packery: {
+      gutter: 0,
       // fitWidth: true
     },
   });
