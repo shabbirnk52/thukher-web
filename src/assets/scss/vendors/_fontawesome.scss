@@ -1,5 +1,12 @@
 $fa-font-path: "../fonts";
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "vendors/fontawesome-pro/scss/fontawesome.scss";
+@import "vendors/fontawesome-pro/scss/solid.scss";
+@import "vendors/fontawesome-pro/scss/brands.scss";
+@import "vendors/fontawesome-pro/scss/regular.scss";
+@import "vendors/fontawesome-pro/scss/duotone.scss";
+@import "vendors/fontawesome-pro/scss/light.scss";
+@import "vendors/fontawesome-pro/scss/sharp-light.scss";
+@import "vendors/fontawesome-pro/scss/sharp-regular.scss";
+@import "vendors/fontawesome-pro/scss/sharp-solid.scss";
+@import "vendors/fontawesome-pro/scss/sharp-thin.scss";
+@import "vendors/fontawesome-pro/scss/thin.scss";
