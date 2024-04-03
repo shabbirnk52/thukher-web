@@ -21,13 +21,13 @@ swup.hooks.on('visit:start', (visit) => {
 });
 swup.hooks.on('content:replace', (visit) => {
     var $destinationHTML = $(visit.to.html);
-    if (visit.to.url == `${baseURL}index.html` || visit.to.url == `${baseURL}/` || visit.to.url == `${baseURL}/index.html`) {
+    if (visit.to.url == `${baseURL}index.html` || visit.to.url == `${baseURL}/` || visit.to.url == `${baseURL}/index.html` || visit.to.url == `${baseURL}/index-rtl.html`) {
         console.log("Navigating to Home");
         $(".page-title").remove();
     }
     else {
         $("#header-carousel").remove();
-        if (visit.from.url == `${baseURL}index.html` || visit.from.url == `${baseURL}/` || visit.from.url == `${baseURL}/index.html`) {
+        if (visit.from.url == `${baseURL}index.html` || visit.from.url == `${baseURL}/` || visit.from.url == `${baseURL}/index.html` || visit.from.url == `${baseURL}/index-rtl.html`) {
             $("html").addClass("from-home");
             var pageTitleSection = $destinationHTML.find(".breadcrumbs").closest(".page-title").prop("outerHTML");
             $(pageTitleSection).insertBefore("main");
