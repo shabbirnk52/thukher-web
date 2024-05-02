@@ -74,7 +74,7 @@ breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL
                     </div>
 
                     <div class="col-12">
-                        {{>_button-a ButtonClasses="btn-primary" ButtonText="Submit"}}
+                        {{>_button-a URL="javascript:;" ButtonClasses="btn-primary submit-btn" ButtonText="Submit"}}
                     </div>
                 </div>
             </div>
@@ -84,3 +84,13 @@ breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL
 <!-- Career Details End -->
 
 {{>_vendor}}
+
+{{>_job-application-sent-modal}}
+
+<script>
+    $(function () {
+        $(".submit-btn").click(function () {
+            $("#job-application-sent-modal").modal("show");
+        });
+    });
+</script>

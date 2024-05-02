@@ -46,6 +46,18 @@
         "ClientLogo": "assets/img/portfolio/mal3ab-logo.png"
     },
     {
+        "Title": "KFAS Sharepoint",
+        "ImageURL": "assets/img/portfolio/kfas-sharepoint-full.png",
+        "BackgroundImage": "assets/img/portfolio/kfasi-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Sharepoint",
+        "ClientName": "KFAS",
+        "ClientLogo": "assets/img/portfolio/kfas-logo.png"
+    },
+    {
         "Title": "Twarrad Mobile App",
         "ImageURL": "assets/img/portfolio/twarrad-app-full.png",
         "BackgroundImage": "assets/img/portfolio/twarrad-bg.jpg",
@@ -90,5 +102,17 @@
         "FilterType": "Apps Booking",
         "ClientName": "Shalayhna",
         "ClientLogo": "assets/img/portfolio/shalayhna-logo.svg"
+    },
+    {
+        "Title": "KFH Sharepoint",
+        "ImageURL": "assets/img/portfolio/kfh-sharepoint-full.png",
+        "BackgroundImage": "assets/img/portfolio/kfh-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Sharepoint",
+        "ClientName": "Kuwait Finance House",
+        "ClientLogo": "assets/img/portfolio/kfh-logo.png"
     }
 ]

@@ -62,7 +62,8 @@
                             NameId="Message"}}
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            {{>_button-a URL="javascript:;" ButtonClasses="btn-primary w-100 py-3 submit-btn"
+                            ButtonText="Send Message"}}
                         </div>
                     </div>
                 </form>
@@ -77,3 +78,13 @@
     </div>
 </div>
 <!-- Contact End -->
+
+{{>_message-sent-modal}}
+
+<script>
+    $(function () {
+        $(".submit-btn").click(function () {
+            $("#message-sent-modal").modal("show");
+        });
+    });
+</script>

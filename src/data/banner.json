@@ -1,17 +1,22 @@
 [
     {
-        "Title": "CREATIVE & INNOVATIVE",
-        "Subtitle": "Creative & Innovative Digital Solution",
-        "ImageURL": "assets/img/banners/banner-1.jpg"
+        "Title": "Web & App Design and Development",
+        "Subtitle": "Creative & Innovative",
+        "ImageURL": "assets/img/banner/banner-4.jpg"
     },
     {
-        "Title": "CREATIVE & INNOVATIVE",
-        "Subtitle": "Creative & Innovative Digital Solution",
-        "ImageURL": "assets/img/banners/banner-2.jpg"
+        "Title": "Marketing",
+        "Subtitle": "Engaging & Strategic",
+        "ImageURL": "assets/img/banner/banner-7.jpg"
     },
     {
-        "Title": "CREATIVE & INNOVATIVE",
-        "Subtitle": "Creative & Innovative Digital Solution",
-        "ImageURL": "assets/img/banners/banner-3.jpg"
+        "Title": "Enterprise",
+        "Subtitle": "Scalable Solutions",
+        "ImageURL": "assets/img/banner/banner-1.jpg"
+    },
+    {
+        "Title": "Telecom - VAS",
+        "Subtitle": "Cutting-edge Integration",
+        "ImageURL": "assets/img/banner/banner-3.jpg"
     }
 ]

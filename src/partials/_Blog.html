@@ -3,15 +3,12 @@
     <div class="container">
         {{>_section-title Title="Latest Blog" Subtitle="Read The Latest Articles from Our Blog Post"}}
         <div class="row g-5">
+            {{#repeat 3}}
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 {{>_blog-item}}
             </div>
-            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                {{>_blog-item}}
-            </div>
-            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                {{>_blog-item}}
-            </div>
+            {{/repeat}}
+            {{>_call-us-quote}}
         </div>
     </div>
 </div>

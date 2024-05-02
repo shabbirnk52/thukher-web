@@ -359,9 +359,18 @@ function themeInit() {
 
 
   // Facts counter
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 2000
+  $('[data-toggle="counter-up"]').each(function () {
+    if (!$(this).hasClass("running-up")) {
+      $(this).counterUp({
+        delay: 10,
+        time: 2000
+      });
+      $(this).addClass("running-up");
+      var that = this;
+      setTimeout(function () {
+        $(that).removeClass("running-up");
+      }, 3000);
+    }
   });
 
 
@@ -373,14 +382,23 @@ function themeInit() {
       $('.back-to-top').fadeOut('slow');
     }
   });
+
   $('.back-to-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-    return false;
+    $(this).addClass("disabled").attr('disabled', "disabled"); // Disable the button
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+      $('.back-to-top').removeClass("disabled"); // Enable the button after animation completes
+      $('.back-to-top').removeAttrattr("disabled");
+    });
+    setTimeout(function () {
+      $('.back-to-top').removeClass("disabled"); // Enable the button after animation completes
+      $('.back-to-top').removeAttrattr("disabled");
+    }, 2000);
   });
 
 
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     autoplay: true,
     smartSpeed: 1500,
     dots: true,
@@ -405,12 +423,15 @@ function themeInit() {
 
   // Vendor carousel
   $('.vendor-carousel').owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     loop: true,
-    margin: 45,
+    margin: 30,
     dots: false,
-    loop: true,
+    //default settings:
     autoplay: true,
-    smartSpeed: 1000,
+    slideTransition: "linear",
+    autoplaySpeed: 1000,
+    autoplayTimeout: 1500,
     responsive: {
       0: {
         items: 2
@@ -422,7 +443,7 @@ function themeInit() {
         items: 6
       },
       992: {
-        items: 8
+        items: 9
       }
     }
   });
@@ -510,6 +531,7 @@ function initUserThemePreference() {
 
 function initIsotope() {
 
+
   var $grid = $('.grid');
   // $grid.isotope({
   //   itemSelector: '.grid-item',
@@ -556,4 +578,6 @@ function initIsotope() {
     $(this).addClass("active");
     portfolioIsotope.isotope({ filter: $(this).data("filter") });
   });
+
+
 }

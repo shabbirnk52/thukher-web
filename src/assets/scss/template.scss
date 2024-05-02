@@ -511,11 +511,12 @@ h6,
 }
 
 .service3-item * {
-    transition: .3s;
+    transition: 0s;
 }
 
 .service3-item:hover * {
     color: #FFFFFF !important;
+    transition: .3s;
 }
 
 .service3-item .service-icon {

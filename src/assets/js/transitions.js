@@ -20,7 +20,7 @@ swup.hooks.on('visit:start', (visit) => {
     }
 });
 swup.hooks.on('content:replace', (visit) => {
-    var $destinationHTML = $(visit.to.html);
+    var $destinationHTML = $('<div id="body-mock">' + visit.to.html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/ig, '') + '</div>');
     if (visit.to.url == `${baseURL}index.html` || visit.to.url == `${baseURL}/` || visit.to.url == `${baseURL}/index.html` || visit.to.url == `${baseURL}/index-rtl.html`) {
         console.log("Navigating to Home");
         $(".page-title").remove();
@@ -35,16 +35,17 @@ swup.hooks.on('content:replace', (visit) => {
     }
 });
 swup.hooks.before('content:replace', (visit) => {
-    var $destinationHTML = $(visit.to.html);
+    var $destinationHTML = $('<div id="body-mock">' + visit.to.html.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/ig, '') + '</div>');
     var pageTitle = $destinationHTML.find(".breadcrumbs").closest(".page-title").find("h1").html();
     $(".page-title h1").html(pageTitle);
     $(".page-title .breadcrumbs").html($destinationHTML.find(".breadcrumbs").html());
 });
 swup.hooks.on('visit:end', (visit) => {
     $("html").removeClass("from-home to-home");
+});
+swup.hooks.on('page:view', (visit) => {
     initAllModules();
 });
-
 // swup.hooks.on('animation:out:start', (visit) => {
 //   $("main>div").each(function (index) {
 //     setTimeout(function () {

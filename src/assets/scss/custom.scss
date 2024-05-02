@@ -19,6 +19,13 @@ input[type="file"] {
     display: none;
   }
 }
+/*rtl:begin:ignore*/
+[dir=rtl]{
+  i.bi.bi-arrow-right::before {
+      transform: scaleX(-1);
+  }
+}
+/*rtl:end:ignore*/
 
   .navbar{
     .logo-main{
@@ -220,7 +227,7 @@ input[type="file"] {
       min-width: 100px;
       @include media-breakpoint-up(md){
         max-width: 400px;
-        min-width: 300px;
+        min-width: 230px;
       }
       // transition: transform 1s ease;
       // transform: translateY(50%);
@@ -340,4 +347,38 @@ input[type="file"] {
       object-fit: cover;
       object-position: center;
   }
+}
+
+.modal{
+  .modal-header.text-light{
+    .btn-close{
+      filter: invert(1);
+    }
+  }
+}
+
+.summernote-content{
+  h3{
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  h4{
+    margin-bottom: 1rem;
+  }
+}
+
+.blog-item{
+  .content{
+    *{
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.carousel-aboutus{
+  object-fit: cover;
+  min-height: 500px;
 }
