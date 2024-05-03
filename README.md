@@ -1,8 +1,6 @@
-# TEC Frontend HTML
+# Media Phone Plus
 
-![image](https://github.com/Media-Phone-Plus/TEC-frontend-HTML/assets/121866058/17f9496e-57a3-47a4-b4b2-380bdfb1a416)
-
-Corporate Portfolio Site HTML for Touristic Enterprises Company.
+Corporate Site HTML for Media Phone Plus.
 
 ## Build Process
 
