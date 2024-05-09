@@ -405,3 +405,11 @@ input.form-control:-internal-edge-excel-like-autofill-previewed {
     }
   }
 }
+
+@include media-breakpoint-down(lg){
+  .navbar-nav{
+    .btn-primary{
+      background-color: var(--secondary);
+    }
+  }
+}
