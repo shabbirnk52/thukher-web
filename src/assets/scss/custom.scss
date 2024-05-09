@@ -382,3 +382,26 @@ input[type="file"] {
   object-fit: cover;
   min-height: 500px;
 }
+
+// TO handle Egde Form Autofill Color
+input.form-control:-internal-edge-excel-like-autofill-previewed {
+  color: black !important;
+  background: var(--bs-primary);
+}
+
+.owl-carousel.awards-center{
+  .owl-stage-outer{
+    .owl-item{
+      transition: all 0.3s;
+      transform: scale(0.8);
+      &.active{
+      }
+      
+      &.active.center{
+        transition: all 0.3s;
+        transform: scale(1);
+      }
+
+    }
+  }
+}

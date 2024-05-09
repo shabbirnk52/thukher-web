@@ -19,6 +19,7 @@ function initAllModules() {
   // initializeDatePicker();
   // hookMenuLinkDisplay();
   hideLoader();
+  $('html').css("overflow-x", "hidden");
   // For DEVELOPMENT PURPOSES ONLY
   if ($('html').attr('dir') == 'rtl') {
     $(".language-switch").html("English");
@@ -303,6 +304,10 @@ $(document).on("click", ".clear-datepicker", function () {
 
 function themeInit() {
 
+  window.onscroll = () => {
+    toggleTopButton();
+  }
+
   // Spinner
   var spinner = function () {
     setTimeout(function () {
@@ -448,6 +453,25 @@ function themeInit() {
     }
   });
 
+  $('.awards-center').owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
+    center: true,
+    items: 1.5,
+    loop: true,
+    margin: 0,
+    dots: false,
+    //default settings:
+    autoplay: true,
+    slideTransition: "linear",
+    autoplaySpeed: 1000,
+    autoplayTimeout: 3000,
+    responsive: {
+      600: {
+        items: 3
+      }
+    }
+  });
+
 }
 
 /*
@@ -527,6 +551,19 @@ function initUserThemePreference() {
       }
     }
   });
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleTopButton() {
+  if (document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20) {
+    $("#back-to-up").removeClass(".d-none");
+  } else {
+    $("#back-to-up").addClass(".d-none");
+  }
 }
 
 function initIsotope() {

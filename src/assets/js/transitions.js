@@ -7,6 +7,9 @@ if (window.location.host == 'designs.mpp.com.kw') {
 }
 swup.hooks.on('visit:start', (visit) => {
     console.log('Clicked link', visit);
+    if ($("button.navbar-toggler").attr("aria-expanded") == "true") {
+        $("button.navbar-toggler").click();
+    }
     // console.log('Clicked link', visit.trigger.el); // HTMLAnchorElement
     $(".page-title").css("height", $(".page-title").height());
     $(".page-title h1").css("height", $(".page-title h1").height());

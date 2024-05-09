@@ -5,9 +5,11 @@
         {{>_section-title Title="Our Services" Subtitle="Custom IT Solutions for Your Successful Business"}}
         <div class="row g-5">
             {{#each services}}
+            {{#unless Disabled}}
             <div class="col-md-6 wow zoomIn transition-away" data-wow-delay="{{add @index 3}}00ms">
                 {{>_service-item}}
             </div>
+            {{/unless}}
             {{/each}}
             {{!--
             <div class="col-md-6 wow zoomIn transition-away" data-wow-delay="0.3s">

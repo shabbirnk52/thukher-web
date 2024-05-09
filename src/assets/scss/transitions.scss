@@ -11,6 +11,12 @@ html{
   .page-title{
     transition: all 1s ease;
     transform: translateY(0);
+    // z-index: -1;
+  }
+  #header-carousel{
+    // .carousel-inner{
+    //   z-index: -1;
+    // }
   }
   // .transition-away{
   //     transition: all 0.3s ease;

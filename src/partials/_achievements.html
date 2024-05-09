@@ -1,0 +1,14 @@
+<!-- Achievements Start -->
+<div class="bg-secondary" style="--bs-bg-opacity: .05;">
+    <div class="container py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+        {{>_section-title Title="Our Achievements" Subtitle="What we have Accomplished"}}
+        <div class="owl-carousel awards-center">
+            {{#repeat 6}}
+            <div class="wow slideInUp" data-wow-delay="0.3s">
+                {{>_achievement-item}}
+            </div>
+            {{/repeat}}
+        </div>
+    </div>
+</div>
+<!-- Achievements End -->

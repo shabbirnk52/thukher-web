@@ -1,18 +1,24 @@
 [
     {
-        "Title": "Telecom - VAS",
-        "ShortDescription": "Unlock next-level telecom services with our VAS solutions: Content Aggregation, Direct Operator Billing, Service Delivery, and Video Streaming Platforms – revolutionize your offerings today.",
-        "Icon": "<i class='fas fa-tower-broadcast text-light'></i>"
-    },
-    {
+        "Disabled": true,
         "Title": "Marketing",
         "ShortDescription": "Revolutionize marketing with SMS campaign management, location-based marketing, smartlinks, newsletters, and digital solutions for unparalleled brand impact.",
         "Icon": "<i class='fas fa-bullseye text-light'></i>"
     },
     {
-        "Title": "Design & Development",
-        "ShortDescription": "Empower your business with our design and development services, offering bespoke solutions in web, mobile applications, broadcast media, and tailor-made software, ensuring innovation and excellence every step of the way.",
-        "Icon": "<i class='fas fa-code text-light'></i>"
+        "Title": "Web Development",
+        "ShortDescription": "Enhance your online presence with our expert web development. We create captivating websites that drive results, tailored to showcase your brand and engage your audience effectively.",
+        "Icon": "<i class='fas fa-desktop text-light'></i>"
+    },
+    {
+        "Title": "App Development",
+        "ShortDescription": "Bring your ideas to life with our top-notch app development. We specialize in creating intuitive mobile applications that stand out, delivering a seamless user experience and driving engagement across platforms.",
+        "Icon": "<i class='fas fa-mobile-screen text-light'></i>"
+    },
+    {
+        "Title": "Telecom - VAS",
+        "ShortDescription": "Unlock next-level telecom services with our VAS solutions: Content Aggregation, Direct Operator Billing, Service Delivery, and Video Streaming Platforms – revolutionize your offerings today.",
+        "Icon": "<i class='fas fa-tower-broadcast text-light'></i>"
     },
     {
         "Title": "Enterprise",

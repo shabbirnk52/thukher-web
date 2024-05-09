@@ -565,14 +565,16 @@ h6,
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: #DDDDDD;
+    background: transparent;
     border-radius: 2px;
     transition: .5s;
+    border: 2px solid var(--light);
 }
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: var(--primary);
+    background: var(--light);
+    border: 2px solid var(--light);
 }
 
 .testimonial-carousel .owl-item.center {
@@ -586,7 +588,7 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-item {
     background: #FFFFFF !important;
-    box-shadow: 0 0 30px #DDDDDD;
+    box-shadow: 0 0 30px #00000046;
 }
 
 
@@ -1229,6 +1231,16 @@ h6,
   animation: section-title-run 5s infinite linear;
 }
 
+
+.section-title.text-light{
+    &::before {
+        background: var(--light);
+    }
+    &::after {
+        background: var(--primary);
+    }
+}
+
 .section-title.section-title-sm::after {
   width: 4px;
   height: 3px;
@@ -1304,22 +1316,6 @@ h6,
   justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  background: #DDDDDD;
-  border-radius: 2px;
-  transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-  width: 30px;
-  background: var(--primary);
-}
-
 .testimonial-carousel .owl-item.center {
   position: relative;
   z-index: 1;
@@ -1327,11 +1323,6 @@ h6,
 
 .testimonial-carousel .owl-item .testimonial-item {
   transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-  background: #FFFFFF !important;
-  box-shadow: 0 0 30px #DDDDDD;
 }
 
 

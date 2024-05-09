@@ -1,5 +1,6 @@
 <div
-    class="section-title {{#if Align}}text-{{Align}}{{else}}text-center{{/if}} position-relative pb-3 mb-5 mt-3 mx-auto transition-away">
-    {{#if Title}}<h5 class="fw-bold text-primary text-uppercase">{{Title}}</h5>{{/if}}
-    {{#if Subtitle}}<h1 class="mb-0">{{Subtitle}}</h1>{{/if}}
+    class="section-title {{#if Light}}text-light{{/if}} {{#if Align}}text-{{Align}}{{else}}text-center{{/if}} position-relative pb-3 mb-5 mt-3 mx-auto transition-away">
+    {{#if Title}}<h5 class="fw-bold {{#if Light}}text-light{{else}}text-primary{{/if}} text-uppercase">{{Title}}</h5>
+    {{/if}}
+    {{#if Subtitle}}<h1 class="mb-0 {{#if Light}}text-light{{/if}}">{{Subtitle}}</h1>{{/if}}
 </div>
