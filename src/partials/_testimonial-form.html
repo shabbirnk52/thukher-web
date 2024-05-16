@@ -1,0 +1,51 @@
+<form class="w-100">
+    <div class="row g-3">
+        <div class="col-12">
+            {{>_section-title Title="Testimonial" SubtitleClasses="h3" Light=1 Subtitle="Share your
+            experience with
+            us"}}
+        </div>
+        <div class="col-lg-6">
+            {{>_input-field Label="Name (English)" FloatingLabel=1 Classes="border-0 bg-light
+            px-4"}}
+        </div>
+        <div class="col-lg-6">
+            {{>_input-field Label="Name (Arabic)" RTL=1 FloatingLabel=1 Classes="border-0 bg-light
+            px-4"}}
+        </div>
+        <div class="col-12">
+            <hr class="border-light my-2">
+        </div>
+        <div class="col-lg-6">
+            {{>_input-field Label="Company Name (English)" FloatingLabel=1 Classes="border-0 bg-light
+            px-4"}}
+        </div>
+        <div class="col-lg-6">
+            {{>_input-field Label="Company Name (Arabic)" RTL=1 FloatingLabel=1 Classes="border-0 bg-light
+            px-4"}}
+        </div>
+        <div class="col-12">
+            <hr class="border-light my-2">
+        </div>
+        <div class="col-lg-6">
+            {{>_textarea-field Label="Message (English)" FloatingLabel=1 Classes="border-0
+            bg-light px-4"}}
+        </div>
+        <div class="col-lg-6">
+            {{>_textarea-field Label="Message (Arabic)" RTL=1 FloatingLabel=1 Classes="border-0
+            bg-light px-4"}}
+        </div>
+        <div class="col-12">
+            <hr class="border-light my-2">
+        </div>
+        <div class="col-lg-12">
+            {{>_input-field Label="Company Logo" Type="File" FloatingLabel=1 Classes="border-0
+            bg-light
+            px-4"}}
+        </div>
+        <div class="col-12">
+            {{>_button-a URL="javascript:;" ButtonClasses="btn-dark w-100 py-3 submit-btn"
+            ButtonText="Submit"}}
+        </div>
+    </div>
+</form>

@@ -4,8 +4,29 @@
         <div class="container">
             {{>_section-title Light=1 Title="Testimonial" Subtitle="What Our Clients Say About Us"}}
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                {{#repeat 4}}
-                {{>_testimonial-item}}
+                {{#repeat 1}}
+                {{!>_testimonial-item CompanyName="Jade Jewelry" TestimonialImage="assets/img/testimonial.jpg"
+                TestimonialText="Lorem ipsum dolor sit amet consectetur adipisicing elit."}}
+                {{>_testimonial-item CompanyName="Twarrad" ClientName="Ali Husseni"
+                TestimonialImage="assets/img/twarrad-testimonial.png"
+                TestimonialText="With reference to your request regarding our comments on Twarrad app latest update.<br>
+                Kindly note that we found the update up to our expectations, also it made our customers experience much
+                easier and joyful throughout the application.
+                <br>
+                Many thanks & regards"}}
+                {{>_testimonial-item CompanyName="Adhari" ClientName="Ahmad al mutari"
+                TestimonialImage="assets/img/adhari-testimonial.png"
+                TestimonialText="I have met all the application companies in Kuwait, both small and large, and even many
+                companies outside the country, but I couldn't find any company that understands me or develops my
+                project idea except Media Phone company, whether in terms of quality, price, or the cooperation of their
+                team. Thank you, thank you, thank you. I am currently with them and will continue with them, and I won't
+                leave them. I would like to thank all the employees. 🌺❤️🌺"}}
+                {{>_testimonial-item CompanyName="Boubyan Fisheries" ClientName="Mustafa Sobhy"
+                TestimonialImage="assets/img/boubyan-testimonial.png"
+                TestimonialText="We would recommend media phone plus for their professionality in initiation and
+                managing the E-commerce system, commitment to handover in time, also their quick responses in the after
+                sales services, they are keen to sustain the long-term relationship with their clients which reflects
+                the continuing success sharing philosophy"}}
                 {{/repeat}}
                 {{!-- <div class="testimonial-item bg-light my-4">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
@@ -17,7 +38,9 @@
                         </div>
                     </div>
                     <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt sed fuga et ullam?
+                        Nostrum voluptates, quaerat voluptate quidem, vitae aliquid a exercitationem autem vel amet,
+                        nihil commodi fugit animi.
                     </div>
                 </div>
                 <div class="testimonial-item bg-light my-4">
@@ -51,3 +74,5 @@
     </div>
 </div>
 <!-- Testimonial End -->
+
+{{>_readmore-modal}}
