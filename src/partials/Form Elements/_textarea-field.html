@@ -16,13 +16,13 @@ RTL = 1 (Default 0) Flips the input field around
 Placeholder = Text to be displayed as ghost/placeholder of the Field
 Value = Text to be added as value of the Field
 }}
-{{#if FloatingLabel}} <div class="form-floating">{{/if}}{{#unless FloatingLabel}}
+{{#if FloatingLabel}} <div class="form-floating{{#if RTL}} dir-rtl{{/if}}">{{/if}}{{#unless FloatingLabel}}
     {{#if Label}}<label for="{{NameId}}" class="{{LabelClass}}" localize-me>{{Label}}{{#if Required}}<span
             class="ms-1 text-danger">*</span>{{/if}}</label>{{#if CustomRightLabel}}{{{CustomRightLabel}}}{{/if}}{{/if}}
     {{/unless}}
     <textarea class="form-control {{Classes}}" {{#if NameId}} name="{{NameId}}" id="{{NameId}}" {{/if}}{{#if Label}}
         aria-describedby="{{Label}}" {{/if}} placeholder="{{Placeholder}}" {{#if Disabled}}disabled{{/if}}
-        style="height: 100px;" {{#if Required}}required{{/if}} localize-me>{{Value}}</textarea>
+        style="height: 150px;" {{#if Required}}required{{/if}} localize-me>{{Value}}</textarea>
     {{#if HelpText}}<small class="form-text text-muted" localize-me>{{HelpText}}</small>{{/if}}
     {{#if InvalidFeedback}}<div class="invalid-feedback" localize-me>{{{InvalidFeedback}}}</div>{{else}}{{#if
     GenericFeedback}}{{#if Label}}{{#if Required}}<div class="invalid-feedback" localize-me>Please enter a {{Label}}
