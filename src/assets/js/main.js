@@ -309,7 +309,7 @@ $(document).on("click", ".clear-datepicker", function () {
 
 function themeInit() {
   truncateTestimonialText();
-
+  setCopyrightYear();
   window.onscroll = () => {
     toggleTopButton();
   }
@@ -637,5 +637,13 @@ function truncateTestimonialText() {
   }
   catch (error) {
     console.error({ Message: "Something went wrong while Truncating Testimonial Text", Object: error });
+  }
+}
+function setCopyrightYear() {
+  try {
+    // set copyright year
+    $('#year').html((new Date).getFullYear());
+  }
+  catch (error) {
   }
 }

@@ -476,3 +476,18 @@ input.form-control:-internal-edge-excel-like-autofill-previewed {
     height: 100%;
   }
 }
+
+// As Per Mr. Bahadur's requests
+.link-animated{
+  a{
+    text-decoration: none;
+  }
+}
+a.h6,a.h5,a{
+  text-decoration: none;
+}
+footer{
+  a{
+    text-decoration: none;
+  }
+}
