@@ -16,13 +16,13 @@
         "Icon": "<i class='fas fa-mobile-screen text-light'></i>"
     },
     {
-        "Title": "Telecom - VAS",
-        "ShortDescription": "Unlock next-level telecom services with our VAS solutions: Content Aggregation, Direct Operator Billing, Service Delivery, and Video Streaming Platforms – revolutionize your offerings today.",
-        "Icon": "<i class='fas fa-tower-broadcast text-light'></i>"
-    },
-    {
         "Title": "Enterprise",
         "ShortDescription": "Elevate your enterprise with our comprehensive services: consultancy expertise, hosted solutions, brand management, and seamless enterprise application integration, ensuring optimized operations and sustained growth.",
         "Icon": "<i class='fas fa-server text-light'></i>"
+    },
+    {
+        "Title": "Telecom - VAS",
+        "ShortDescription": "Unlock next-level telecom services with our VAS solutions: Content Aggregation, Direct Operator Billing, Service Delivery, and Video Streaming Platforms – revolutionize your offerings today.",
+        "Icon": "<i class='fas fa-tower-broadcast text-light'></i>"
     }
 ]
