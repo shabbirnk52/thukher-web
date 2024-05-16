@@ -1,9 +1,15 @@
 <!-- Carousel Start -->
-<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride1="carousel">
   <div class="carousel-inner transition-away-up">
     {{#each banner}}
     <div class="carousel-item{{#ifequal @index 0}} active{{/ifequal}}">
+      {{#if VideoURL}}
+      <video loop="" muted="" playsinline autoplay preload="metadata" height="900" width="1920" poster="{{PosterURL}}">
+        <source src="{{VideoURL}}" type="video/mp4" />
+      </video>
+      {{else}}
       <img class="w-100" src="{{ImageURL}}" alt="Image">
+      {{/if}}
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
         <div class="p-3 p-lg-4 animated fadeInUp" style="max-width: 900px;">
           <h5 class="text-white text-uppercase mb-3 animated fadeInDown">{{Title}}

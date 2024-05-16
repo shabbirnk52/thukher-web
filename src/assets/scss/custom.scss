@@ -1,13 +1,59 @@
 [type=tel], [type=url], [type=email], [type=number] {
   direction: ltr !important;
 }
-
+/*rtl:begin:ignore*/
+.form-floating.dir-rtl{
+  > .form-control {
+    text-align: end;
+    ~ label{
+      left: auto;
+      right: 8px;
+    }
+  }
+  >.form-control {
+		&:focus {
+			~ {
+				label {
+					transform: scale(0.85) translateY(-0.5rem) translateX(1.45rem);
+				}
+			}
+		}
+		&:not(:placeholder-shown) {
+			~ {
+				label {
+					transform: scale(0.85) translateY(-0.5rem) translateX(1.45rem);
+				}
+			}
+		}
+	}
+	>.form-control-plaintext {
+		~ {
+			label {
+				transform: scale(0.85) translateY(-0.5rem) translateX(1.45rem);
+			}
+		}
+	}
+	>.form-select {
+		~ {
+			label {
+				transform: scale(0.85) translateY(-0.5rem) translateX(1.45rem);
+			}
+		}
+	}
+}
+/*rtl:end:ignore*/
+.form-floating label::after {
+  background: var(--bs-light) !important;
+}
 body{
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  &.modal-open{
+    padding: 0 !important;
+  }
 }
 
 // To Hide the "Choose File" Button
@@ -340,12 +386,23 @@ input[type="file"] {
     }
   }
 }
-
-@include media-breakpoint-up(lg){
-  .carousel-item img {
-      height: 80vh;
+.carousel-item{
+  height: auto;
+  img,video {
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
       object-position: center;
+  }
+}
+@include media-breakpoint-up(lg){
+  .carousel-item{
+    height: 80vh;
+    img,video {
+        height: 80vh;
+        object-fit: cover;
+        object-position: center;
+    }
   }
 }
 
@@ -411,5 +468,11 @@ input.form-control:-internal-edge-excel-like-autofill-previewed {
     .btn-primary{
       background-color: var(--secondary);
     }
+  }
+}
+
+.testimonial-carousel{
+  .owl-item{
+    height: 100%;
   }
 }
