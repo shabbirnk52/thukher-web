@@ -233,27 +233,6 @@ h6,
 
 
 /*** Carousel ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(9, 30, 62, .7);
-    z-index: 1;
-}
-
-@media (max-width: 576px) {
-    .carousel-caption h5 {
-        font-size: 14px;
-        font-weight: 500 !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
-    }
-}
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
@@ -866,14 +845,6 @@ h6,
 
 
 /*** Miscellaneous ***/
-@media (min-width: 991.98px) {
-    .facts {
-        position: relative;
-        margin-top: -75px;
-        z-index: 1;
-    }
-}
-
 .progress {
     height: 5px;
 }
@@ -1076,14 +1047,20 @@ h6,
   transition: .5s;
 }
 
-.bg-glass.navbar-dark .navbar-nav .nav-link {
-  // padding: 20px 0;
-  color: var(--dark);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  // color: var(--primary);
+.bg-glass.navbar-dark .navbar-nav
+{
+    .nav-link {
+        // padding: 20px 0;
+        color: var(--dark);
+    }
+    .btn-outline-light{
+        color: var(--dark);
+        border-color: var(--dark);
+        &:hover,&:focus{
+            background-color: var(--dark);
+            color: var(--light);
+        }
+    }
 }
 
 .navbar-dark .navbar-brand h1 {
@@ -1397,7 +1374,7 @@ h6,
 @media (min-width: 991.98px) {
   .facts {
       position: relative;
-      margin-top: -75px;
+      margin-top: -60px;
       margin-bottom: -110px;
       z-index: 1;
   }
