@@ -1,0 +1,89 @@
+---
+layout: default
+title: Web Templates
+breadcrumbs: [{"Text":"Web Templates","URL":"web-templates.html"}]
+---
+
+<!-- Web Templates Start -->
+<div class="container-fluid py-5 wow fadeInUp transition-fade" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="row g-0 mb-3">
+                    {{!--
+                    Search by Select is not required at the moment
+                    <div class="col-2">
+                        {{#>_select-field-block Classes="h-100"}}
+                        <option value="1">Content 1</option>
+                        <option value="2">Content 2</option>
+                        <option value="3">Content 3</option>
+                        <option value="4">Content 4</option>
+                        <option value="5">Content 5</option>
+                        <option value="6">Content 6</option>
+                        {{/_select-field-block}}
+                    </div> --}}
+                    <div class="col">
+                        {{>_input-field Label="Search" FloatingLabel=1 Classes="form-control-lg rounded-0 border-0
+                        bg-light px-4"}}
+                    </div>
+                    <div class="col-auto">
+                        {{>_button-a ButtonClasses="btn-primary d-flex align-items-center h-100" ButtonText="Search"}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills row g-2 justify-content-center mb-0 portfolio-tab" id="portfolio-tab"
+                            role="tablist">
+                            {{>_portfolio-nav-pill Title="All" Selected=1}}
+                            {{>_portfolio-nav-pill Title="Apps" Icon="fas fa-mobile-screen"}}
+                            {{>_portfolio-nav-pill Title="Websites" Icon="fas fa-display"}}
+                            {{>_portfolio-nav-pill Title="Ecommerce" Icon="fas fa-cart-shopping"}}
+                            {{>_portfolio-nav-pill Title="Corporate" Icon="fas fa-briefcase"}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 webtemplates-listing">
+                <div class="row g-5">
+                    {{#repeat 4}}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="webtemplate-item">
+                            <a href="javascript:;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="https://images.placeholders.dev/?width=400&height=600" width="400"
+                                            height="300" class="object-fit-cover webtemplate-image">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="p-3 bg-light">
+                                            <h5 class="mb-1">Theme name goes here</h5>
+                                            <small class="text-600">Something goes here as well</small>
+                                            <h4 class="mt-3 mb-0 text-primary">KWD 3.750</h4>
+                                            <div class="rating">
+                                                <div class="row gx-1">
+                                                    {{#repeat 3}}
+                                                    <div class="col-auto">
+                                                        <i class="fas fa-star smaller text-warning"></i>
+                                                    </div>
+                                                    {{/repeat}}
+                                                    <div class="col-auto">
+                                                        <i class="fas fa-star-half-stroke smaller text-warning"></i>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <i class="far fa-star smaller text-400"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{/repeat}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Web Templates End -->

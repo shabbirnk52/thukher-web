@@ -67,32 +67,9 @@
 </head>
 
 <body>
-  {{!> _loader}}
-  <header>
-    {{> _topbar}}
-    <div class="container-fluid position-relative p-0 bg-primary">
-      {{>_navigation}}
-    </div>
-  </header>
-  {{#unlesspage 'index'}}
-  <div class="page-title container-fluid bg-header bg-header-gradient">
-    <div class="row py-5">
-      <div class="col-12 mt-lg-5 text-center">
-        <h1 class="display-4 text-white animated zoomIn transition-fade">{{title}}</h1>
-        {{>_breadcrumbs}}
-      </div>
-    </div>
-  </div>
-  {{/unlesspage}}
   <main role="main" id="swup" class="transition-fade">
     {{> body}}
   </main>
-  {{> _footer}}
-
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-
   <!-- JavaScript Libraries -->
   <script src="{{root}}assets/js/main.js"></script>
   <script src="{{root}}assets/vendor/js/bootstrap.bundle.js"></script>

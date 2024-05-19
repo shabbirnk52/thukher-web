@@ -477,6 +477,32 @@ input.form-control:-internal-edge-excel-like-autofill-previewed {
   }
 }
 
+.webtemplates-listing{
+  .webtemplate-item{
+    transition: all 0.3s;
+    .webtemplate-image{
+      transition: all 1s;
+      width: 100%;
+      object-position: top;
+    }
+  }
+&:hover{
+  .webtemplate-item{
+    transition: all 0.3s;
+    transform: scale(0.95);
+    &:hover{
+      transform: scale(1.02);
+      .webtemplate-image{
+        transition: all 1s;
+        width: 100%;
+        object-position: bottom;
+      }
+    }
+  }
+}
+}
+
+
 // As Per Mr. Bahadur's requests
 .link-animated{
   a{
