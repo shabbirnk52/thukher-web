@@ -1,0 +1,35 @@
+---
+layout: default
+title: Shop
+breadcrumbs: [{"Text":"Shop","URL":"shop.html"}]
+---
+
+<!-- Shop Start -->
+<div class="container-fluid py-5 wow fadeInUp transition-fade" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-12">
+                <div class="row g-0">
+                    <div class="col-2">
+                        {{#>_select-field-block Classes="h-100"}}
+                        <option value="1">Content 1</option>
+                        <option value="2">Content 2</option>
+                        <option value="3">Content 3</option>
+                        <option value="4">Content 4</option>
+                        <option value="5">Content 5</option>
+                        <option value="6">Content 6</option>
+                        {{/_select-field-block}}
+                    </div>
+                    <div class="col">
+                        {{>_input-field Label="Search" FloatingLabel=1 Classes="form-control-lg rounded-0 border-0
+                        bg-light px-4"}}
+                    </div>
+                    <div class="col-auto">
+                        {{>_button-a ButtonClasses="btn-primary d-flex align-items-center h-100" ButtonText="Search"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop End -->

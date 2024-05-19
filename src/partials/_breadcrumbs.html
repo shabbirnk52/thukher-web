@@ -1,5 +1,7 @@
-<a href="" class="h5 text-white">Home</a>
-{{#each breadcrumbs}}
-<i class="far fa-circle text-white px-2"></i>
-<a href="{{#if URL}}{{URL}}{{else}}#{{/if}}" class="h5 text-white">{{Text}}</a>
-{{/each}}
+<div class="breadcrumbs transition-fade">
+    <a href="index.html" class="h5 text-white">Home</a>
+    {{#each breadcrumbs}}
+    <i class="far fa-circle text-white px-2"></i>
+    <a href="{{#if URL}}{{URL}}{{else}}#{{/if}}" class="h5 text-white">{{Text}}</a>
+    {{/each}}
+</div>

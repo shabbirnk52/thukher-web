@@ -2,9 +2,16 @@
 
 $(document).ready(function () {
   // showLoader();
+  // Initiate the wowjs JUST ONCE
+  new WOW().init()
+  initAllModules();
+});
+
+function initAllModules() {
   themeInit();
+  initIsotope();
   // initUserThemePreference();
-  // initializeSelect2();
+  initializeSelect2();
   // initializeOffcanvas();
   // sanitizeSummernoteContent();
   // initRadioButtonEvents();
@@ -12,6 +19,7 @@ $(document).ready(function () {
   // initializeDatePicker();
   // hookMenuLinkDisplay();
   hideLoader();
+  $('html').css("overflow-x", "hidden");
   // For DEVELOPMENT PURPOSES ONLY
   if ($('html').attr('dir') == 'rtl') {
     $(".language-switch").html("English");
@@ -24,13 +32,8 @@ $(document).ready(function () {
       });
     }
   }, 100);
-
-  // addInvalidFeedbackStyle();
-  setTimeout(function () {
-    // hideLoader();
-  }, 2000);
   console.log("document ready");
-});
+}
 function hookMenuLinkDisplay() {
   if (window.outerWidth < 1200) {
     $(".main-menu-link a").on("click", function (e) {
@@ -103,80 +106,85 @@ function SwitchRTL() {
 
 
 function initializeSelect2() {
-  if ($('body').css('direction') == 'rtl') {
-    $('select:not(.no-search)').each(function () {
-      if ($(this).closest(".modal").length) {
-        var modalID = "#" + $(this).closest(".modal").attr("id");
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          dir: "rtl",
-          theme: 'bootstrap-5',
-          dropdownParent: modalID
-        });
-      }
-      else {
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          dir: "rtl",
-          theme: 'bootstrap-5'
-        });
-      }
-    });
-    $('select.no-search').each(function () {
-      if ($(this).closest(".modal").length) {
-        var modalID = "#" + $(this).closest(".modal").attr("id");
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          dir: "rtl",
-          theme: 'bootstrap-5',
-          dropdownParent: modalID,
-          minimumResultsForSearch: Infinity
-        });
-      }
-      else {
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          dir: "rtl",
-          theme: 'bootstrap-5',
-          minimumResultsForSearch: Infinity
-        });
-      }
-    });
-  } else {
-    $('select:not(.no-search)').each(function () {
-      if ($(this).closest(".modal").length) {
-        var modalID = "#" + $(this).closest(".modal").attr("id");
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          theme: 'bootstrap-5',
-          dropdownParent: modalID
-        });
-      }
-      else {
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          theme: 'bootstrap-5'
-        });
-      }
-    });
-    $('select.no-search').each(function () {
-      if ($(this).closest(".modal").length) {
-        var modalID = "#" + $(this).closest(".modal").attr("id");
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          theme: 'bootstrap-5',
-          dropdownParent: modalID,
-          minimumResultsForSearch: Infinity
-        });
-      }
-      else {
-        $(this).select2({
-          placeholder: $(this).attr("placeholder"),
-          theme: 'bootstrap-5',
-          minimumResultsForSearch: Infinity
-        });
-      }
-    });
+  try {
+    if ($('body').css('direction') == 'rtl') {
+      $('select:not(.no-search)').each(function () {
+        if ($(this).closest(".modal").length) {
+          var modalID = "#" + $(this).closest(".modal").attr("id");
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            dir: "rtl",
+            theme: 'bootstrap-5',
+            dropdownParent: modalID
+          });
+        }
+        else {
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            dir: "rtl",
+            theme: 'bootstrap-5'
+          });
+        }
+      });
+      $('select.no-search').each(function () {
+        if ($(this).closest(".modal").length) {
+          var modalID = "#" + $(this).closest(".modal").attr("id");
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            dir: "rtl",
+            theme: 'bootstrap-5',
+            dropdownParent: modalID,
+            minimumResultsForSearch: Infinity
+          });
+        }
+        else {
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            dir: "rtl",
+            theme: 'bootstrap-5',
+            minimumResultsForSearch: Infinity
+          });
+        }
+      });
+    } else {
+      $('select:not(.no-search)').each(function () {
+        if ($(this).closest(".modal").length) {
+          var modalID = "#" + $(this).closest(".modal").attr("id");
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            theme: 'bootstrap-5',
+            dropdownParent: modalID
+          });
+        }
+        else {
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            theme: 'bootstrap-5'
+          });
+        }
+      });
+      $('select.no-search').each(function () {
+        if ($(this).closest(".modal").length) {
+          var modalID = "#" + $(this).closest(".modal").attr("id");
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            theme: 'bootstrap-5',
+            dropdownParent: modalID,
+            minimumResultsForSearch: Infinity
+          });
+        }
+        else {
+          $(this).select2({
+            placeholder: $(this).attr("placeholder"),
+            theme: 'bootstrap-5',
+            minimumResultsForSearch: Infinity
+          });
+        }
+      });
+    }
+  }
+  catch (error) {
+    console.error({ Message: "Something went wrong while initializing Select2", Object: error });
   }
 }
 
@@ -300,6 +308,11 @@ $(document).on("click", ".clear-datepicker", function () {
 });
 
 function themeInit() {
+  truncateTestimonialText();
+  setCopyrightYear();
+  window.onscroll = () => {
+    toggleTopButton();
+  }
 
   // Spinner
   var spinner = function () {
@@ -311,10 +324,6 @@ function themeInit() {
   };
   spinner();
 
-
-  // Initiate the wowjs
-  console.log(new WOW().init());
-
   // Sticky Navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 45) {
@@ -325,7 +334,7 @@ function themeInit() {
   });
   // Glassy Navbar
   $(window).scroll(function () {
-    if ($(this).scrollTop() > $("#header-carousel").height()) {
+    if ($(this).scrollTop() > $("#header-carousel,.page-title").height()) {
       $('.navbar').addClass('bg-glass');
     } else {
       $('.navbar').removeClass('bg-glass');
@@ -361,9 +370,18 @@ function themeInit() {
 
 
   // Facts counter
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 2000
+  $('[data-toggle="counter-up"]').each(function () {
+    if (!$(this).hasClass("running-up")) {
+      $(this).counterUp({
+        delay: 10,
+        time: 2000
+      });
+      $(this).addClass("running-up");
+      var that = this;
+      setTimeout(function () {
+        $(that).removeClass("running-up");
+      }, 3000);
+    }
   });
 
 
@@ -375,14 +393,31 @@ function themeInit() {
       $('.back-to-top').fadeOut('slow');
     }
   });
+
   $('.back-to-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-    return false;
+    $(this).addClass("disabled").attr('disabled', "disabled"); // Disable the button
+    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+      $('.back-to-top').removeClass("disabled"); // Enable the button after animation completes
+      $('.back-to-top').removeAttrattr("disabled");
+    });
+    setTimeout(function () {
+      $('.back-to-top').removeClass("disabled"); // Enable the button after animation completes
+      $('.back-to-top').removeAttrattr("disabled");
+    }, 2000);
   });
 
-
+  // TODO: Figure out why sometimes the code does not always apply maximum height.
+  $(".testimonial-carousel").on("initialized.owl.carousel", function (event) {
+    var maxHeight = 0;
+    $(".testimonial-carousel").find(".owl-item").each(function () {
+      if ($(this).outerHeight() > maxHeight)
+        maxHeight = $(this).outerHeight();
+    });
+    $(".testimonial-carousel").find(".owl-stage").height(maxHeight);
+  });
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     autoplay: true,
     smartSpeed: 1500,
     dots: true,
@@ -407,12 +442,15 @@ function themeInit() {
 
   // Vendor carousel
   $('.vendor-carousel').owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
     loop: true,
-    margin: 45,
+    margin: 30,
     dots: false,
-    loop: true,
+    //default settings:
     autoplay: true,
-    smartSpeed: 1000,
+    slideTransition: "linear",
+    autoplaySpeed: 1000,
+    autoplayTimeout: 1500,
     responsive: {
       0: {
         items: 2
@@ -424,7 +462,26 @@ function themeInit() {
         items: 6
       },
       992: {
-        items: 8
+        items: 9
+      }
+    }
+  });
+
+  $('.awards-center').owlCarousel({
+    rtl: $("html").attr("dir") == "rtl" ? true : false,
+    center: true,
+    items: 1.5,
+    loop: true,
+    margin: 0,
+    dots: false,
+    //default settings:
+    autoplay: true,
+    slideTransition: "linear",
+    autoplaySpeed: 1000,
+    autoplayTimeout: 3000,
+    responsive: {
+      600: {
+        items: 3
       }
     }
   });
@@ -508,4 +565,85 @@ function initUserThemePreference() {
       }
     }
   });
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleTopButton() {
+  if (document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20) {
+    $("#back-to-up").removeClass(".d-none");
+  } else {
+    $("#back-to-up").addClass(".d-none");
+  }
+}
+
+function initIsotope() {
+  try {
+    var $grid = $('.grid');
+    $grid.isotope({
+      itemSelector: '.grid-item',
+      percentPosition: true,
+      layoutMode: 'packery',
+      packery: {
+        gutter: 0,
+      },
+    });
+    $grid.imagesLoaded().progress(function () {
+      $grid.isotope('layout');
+    });
+    $("[data-filter-by]").on("click", function () {
+      $grid.isotope({ filter: $(this).attr("data-filter-by") });
+    });
+
+    var portfolioIsotope = $(".portfolio-container").isotope({
+      itemSelector: ".portfolio-item",
+      layoutMode: "fitRows",
+    });
+    portfolioIsotope.imagesLoaded().progress(function () {
+      portfolioIsotope.isotope('layout');
+    });
+    $("#portfolio-flters li").on("click", function () {
+      $("#portfolio-flters li").removeClass("active");
+      $(this).addClass("active");
+      portfolioIsotope.isotope({ filter: $(this).data("filter") });
+    });
+  }
+  catch (error) {
+    console.error({ Message: "Something went wrong while initializing Isotope", Object: error });
+  }
+
+
+}
+
+function truncateTestimonialText() {
+  try {
+    var TextLimit = 200;
+    $(".testimonial-text").each(function () {
+      if ($(this).text().trim().length > TextLimit) {
+        var $readmorelink = `<a href="javascript:;" class="link-primary readmore-link" data-readmoretext="${$(this).html().trim()}">Read More</a>`;
+        $(this).html($(this).text().trim().substring(0, TextLimit).split(" ").slice(0, -1).join(" ") + "... " + $readmorelink);
+      }
+    });
+    $(document).on("click", ".readmore-link", function () {
+      $("#readmore-modal .testimonial-image").attr("src", $(this).closest(".testimonial-item").find(".testimonial-image").attr("src"));
+      $("#readmore-modal .testimonial-company").html($(this).closest(".testimonial-item").find(".testimonial-company").text());
+      $("#readmore-modal .testimonial-client").html($(this).closest(".testimonial-item").find(".testimonial-client").text());
+      $("#readmore-modal .readmore-content").html($(this).data("readmoretext"));
+      $("#readmore-modal").modal("show");
+    });
+  }
+  catch (error) {
+    console.error({ Message: "Something went wrong while Truncating Testimonial Text", Object: error });
+  }
+}
+function setCopyrightYear() {
+  try {
+    // set copyright year
+    $('#year').html((new Date).getFullYear());
+  }
+  catch (error) {
+  }
 }

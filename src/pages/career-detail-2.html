@@ -1,0 +1,142 @@
+---
+layout: default
+title: Career Details
+breadcrumbs: [{"Text":"Career","URL":"career.html"},{"Text":"Career Detail","URL":"career-detail.html"}]
+---
+
+<!-- Career Details Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-12">
+                {{>_section-title Title="Job Description" Subtitle="Full-Time Android Mobile App Developer, Based in
+                Kuwait"
+                Align="start"}}
+                <div class="summernote-content">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Develop applications with Android Studio using latest Android SDKs while considering
+                            business/technical requirements to build functional, high-performance Android phone and
+                            tablet apps
+                        </li>
+                        <li>
+                            Design, build and maintain high performance, reusable and reliable programming languages
+                            code like Java, Kotlin, third party Android libraries and APIs, cloud message APIs and Push
+                            Notifications etc.
+                        </li>
+                        <li>
+                            Create custom Android UI controls, design protocols, develop interfaces along with offline
+                            storage, threading, and performance tuning
+                        </li>
+                        <li>
+                            Use RESTful APIs to connect Android applications to back-end services
+                        </li>
+                        <li>
+                            Publish Android applications in Google Play Store
+                        </li>
+                        <li>
+                            Use Google’s Android design principles and interface guidelines
+                        </li>
+                        <li>
+                            Maintain different versions of Android as well as different screen sizes
+                        </li>
+                        <li>
+                            Proficient understanding of code versioning tools such as Git, Github
+                        </li>
+                        <li>
+                            Practical experience on other frameworks, libraries or any other technology will be an added
+                            value
+                        </li>
+                        <li>
+                            Maintain project, drafts, files, codes and scripts in an organized and collaborative manner
+                            that allow other team members to make edits/suggestions/changes
+                        </li>
+                        <li>
+                            Contribute in all phases of the mobile application development lifecycle
+                        </li>
+                        <li>
+                            Use best coding practices, unit testing and version controlling methodologies
+                        </li>
+                        <li>
+                            Handle software updates, patches, bug fixes and resolve bottlenecks
+                        </li>
+                        <li>
+                            Respond to fast-paced technological advancements to meet industry trends and standards
+                        </li>
+                        <li>
+                            Maintain good relations within the departments; support and coordinate with team members and
+                            fulfil deadlines for the assigned projects
+                        </li>
+                    </ul>
+                    <h3>
+                        Employment Requirements:
+                    </h3>
+                    <ol>
+                        <li>
+                            B.Sc. Computer Sciences / Computer Engineering / Software Development or an equivalent
+                            degree from a recognized institution
+                        </li>
+                        <li>
+                            Minimum 3 years of experience in developing responsive and adaptive Android Apps using
+                            Kotlin
+                        </li>
+                        <li>
+                            The candidate must sign a service bond of 3 years with the company
+                        </li>
+                        <li>
+                            The candidate must be available to join in the shortest possible time
+                        </li>
+                        <li>
+                            The educational degrees of the candidate must be attested/accredited by appropriate
+                            authorities
+                        </li>
+                        <li>
+                            Candidate must possess strong written and verbal communications skills
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-6 col-xxl-8">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h3>
+                            Application Form
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{>_input-field Label="Name" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_input-field Label="Mobile Number" Type="number" FloatingLabel=1 Classes="border-0 bg-light
+                        px-4"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_input-field Label="Email" Type="email" FloatingLabel=1 Classes="border-0 bg-light
+                        px-4"}}
+                    </div>
+                    <div class="col-12">
+                        {{>_input-field Label="Upload CV" Type="file" FloatingLabel=1 Classes="border-0 bg-light px-4"}}
+                    </div>
+
+                    <div class="col-12">
+                        {{>_button-a URL="javascript:;" ButtonClasses="btn-primary submit-btn" ButtonText="Submit"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Career Details End -->
+
+{{>_vendor}}
+
+{{>_job-application-sent-modal}}
+
+<script>
+    $(function () {
+        $(".submit-btn").click(function () {
+            $("#job-application-sent-modal").modal("show");
+        });
+    });
+</script>

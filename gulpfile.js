@@ -148,6 +148,8 @@ function jsVendor() {
     'vendors/owlcarousel/owl.carousel.min.js',
     // 'vendors/mixitup/mixitup.min.js',
     'vendors/isotope/isotope.min.js',
+    'vendors/isotope/packery-mode.pkgd.min.js',
+    'vendors/isotope/imagesloaded.pkgd.min.js',
     // 'node_modules/slick-carousel/slick/slick.min.js',
     // 'node_modules/slick-animation/slick-animation.min.js',
     // 'node_modules/bs5-lightbox/dist/index.bundle.min.js',

@@ -1,24 +1,27 @@
 <!-- Carousel Start -->
-<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    {{#repeat 2}}
+<div id="header-carousel" class="carousel slide carousel-fade z-2" data-bs-ride1="carousel">
+  <div class="carousel-inner transition-away-up">
+    {{#each banner}}
     <div class="carousel-item{{#ifequal @index 0}} active{{/ifequal}}">
-      <img class="w-100" src="assets/img/carousel-{{add @index 1}}.jpg" alt="Image">
+      {{#if VideoURL}}
+      <video loop="" muted="" playsinline autoplay preload="metadata" height="900" width="1920" poster="{{PosterURL}}">
+        <source src="{{VideoURL}}" type="video/mp4" />
+      </video>
+      {{else}}
+      <img class="w-100" src="{{ImageURL}}" alt="Image">
+      {{/if}}
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
         <div class="p-3 p-lg-4 animated fadeInUp" style="max-width: 900px;">
-          <h5 class="text-white text-uppercase mb-3 animated fadeInDown">Creative & Innovative
+          <h5 class="text-white text-uppercase mb-3 animated fadeInDown">{{Title}}
           </h5>
-          <h1 class="display-3 text-white mb-md-4 animated zoomIn">Creative & Innovative
-            Digital
-            Solution
-          </h1>
+          <h1 class="display-3 text-white mb-md-4 animated zoomIn">{{Subtitle}}</h1>
           <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated fadeInLeft">Free
             Quote</a>
           <a href="contact.html" class="btn btn-glass py-md-3 px-md-5 animated fadeInRight">Contact Us</a>
         </div>
       </div>
     </div>
-    {{/repeat}}
+    {{/each}}
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

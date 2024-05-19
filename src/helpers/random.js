@@ -1,5 +1,8 @@
-module.exports = function(length) {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+module.exports = function (length, numbersonly = false) {
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  if (numbersonly) {
+    characters = '123456789';
+  }
   let randomString = '';
 
   for (let i = 0; i < length; i++) {

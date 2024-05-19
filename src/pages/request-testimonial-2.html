@@ -1,0 +1,73 @@
+---
+layout: default
+title: Submit Testimonial
+breadcrumbs: [{"Text":"Submit Testimonial","URL":"request-testimonial.html"}]
+---
+
+<!-- Quote Start -->
+<div class="container-fluid py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-12">
+                {{>_section-title Title="Testimonial Guidelines" Align="start" Subtitle="Share your experience with
+                us"}}
+                <p><strong>Guidelines for Testimonials:</strong></p>
+                <ol>
+                    <li>
+                        <p><strong>Honesty:</strong> We encourage you to be honest and transparent in your
+                            testimonials. Your genuine feedback helps us better serve you and others.</p>
+                    </li>
+                    <li>
+                        <p><strong>Accuracy:</strong> Please ensure that your testimonial accurately reflects your
+                            experience with our product/service. Specific details are always appreciated.</p>
+                    </li>
+                    <li>
+                        <p><strong>Respect:</strong> Keep your testimonials respectful and constructive. We welcome
+                            both positive feedback and constructive criticism that helps us grow.</p>
+                    </li>
+                </ol>
+                <p><strong>What to Include in Your Testimonial:</strong></p>
+                <ol>
+                    <li>
+                        <p><strong>Your Experience:</strong> Share your experience using our product/service. How
+                            did it meet your needs or expectations?</p>
+                    </li>
+                    <li>
+                        <p><strong>Benefits:</strong> Highlight any specific benefits or features that you found
+                            particularly valuable.</p>
+                    </li>
+                    <li>
+                        <p><strong>Improvements:</strong> If applicable, suggest any areas where you think we could
+                            improve or any features you would like to see added in the future.</p>
+                    </li>
+                    <li>
+                        <p><strong>Recommendation:</strong> Would you recommend our product/service to others? Why
+                            or why not?</p>
+                    </li>
+                </ol>
+                <p><strong>How to Submit Your Testimonial:</strong></p>
+                <p>Simply fill out the form with your testimonial. By submitting your testimonial, you agree to allow us
+                    to use it on our website
+                    and marketing materials.</p>
+                <p>Thank you for taking the time to share your feedback with us. Your testimonials help us continue
+                    to provide excellent products/services to our valued customers.</p>
+            </div>
+            <div class="col-lg-8 col-xl-8 mx-auto">
+                <div class="bg-primary rounded d-flex align-items-center p-3 p-lg-5 wow zoomIn" data-wow-delay="0.9s">
+                    {{>_testimonial-form}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Quote End -->
+
+{{>_message-sent-modal}}
+
+<script>
+    $(function () {
+        $(".submit-btn").click(function () {
+            $("#message-sent-modal").modal("show");
+        });
+    });
+</script>

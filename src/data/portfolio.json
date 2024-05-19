@@ -1,6 +1,6 @@
 [
     {
-        "Title": "Adhari Web",
+        "Title": "Web",
         "ImageURL": "assets/img/portfolio/adhari-full-web.png",
         "BackgroundImage": "assets/img/portfolio/adhari-bg.jpg",
         "Height": "288",
@@ -12,7 +12,7 @@
         "ClientLogo": "assets/img/portfolio/adhari-logo.svg"
     },
     {
-        "Title": "Adhari Mobile App",
+        "Title": "App",
         "ImageURL": "assets/img/portfolio/adhari-app-full.png",
         "BackgroundImage": "assets/img/portfolio/adhari-bg.jpg",
         "Height": "512",
@@ -23,7 +23,7 @@
         "ClientLogo": "assets/img/portfolio/adhari-logo.svg"
     },
     {
-        "Title": "Mal3ab Mobile App",
+        "Title": "App",
         "ImageURL": "assets/img/portfolio/mal3ab-app-full.jpg",
         "BackgroundImage": "assets/img/portfolio/mal3ab-bg.jpg",
         "Height": "512",
@@ -34,7 +34,7 @@
         "ClientLogo": "assets/img/portfolio/mal3ab-logo.png"
     },
     {
-        "Title": "Mal3ab Web",
+        "Title": "Web",
         "ImageURL": "assets/img/portfolio/mal3ab-web-full.png",
         "BackgroundImage": "assets/img/portfolio/mal3ab-bg.jpg",
         "Height": "288",
@@ -46,7 +46,19 @@
         "ClientLogo": "assets/img/portfolio/mal3ab-logo.png"
     },
     {
-        "Title": "Twarrad Mobile App",
+        "Title": "Sharepoint",
+        "ImageURL": "assets/img/portfolio/kfas-sharepoint-full.png",
+        "BackgroundImage": "assets/img/portfolio/kfasi-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Sharepoint",
+        "ClientName": "KFAS",
+        "ClientLogo": "assets/img/portfolio/kfas-logo.png"
+    },
+    {
+        "Title": "App",
         "ImageURL": "assets/img/portfolio/twarrad-app-full.png",
         "BackgroundImage": "assets/img/portfolio/twarrad-bg.jpg",
         "Height": "512",
@@ -57,7 +69,7 @@
         "ClientLogo": "assets/img/portfolio/twarrad-logo.svg"
     },
     {
-        "Title": "Twarrad Web",
+        "Title": "Web",
         "ImageURL": "assets/img/portfolio/twarrad-web-full.png",
         "BackgroundImage": "assets/img/portfolio/twarrad-bg.jpg",
         "Height": "288",
@@ -69,7 +81,7 @@
         "ClientLogo": "assets/img/portfolio/twarrad-logo.svg"
     },
     {
-        "Title": "Shalayhna Web",
+        "Title": "Web",
         "ImageURL": "assets/img/portfolio/shalayhna-web-full.png",
         "BackgroundImage": "assets/img/portfolio/shalayhna-bg.jpg",
         "Height": "288",
@@ -81,7 +93,7 @@
         "ClientLogo": "assets/img/portfolio/shalayhna-logo.svg"
     },
     {
-        "Title": "Shalayhna Mobile App",
+        "Title": "App",
         "ImageURL": "assets/img/portfolio/shalayhna-app-full.jpg",
         "BackgroundImage": "assets/img/portfolio/shalayhna-bg.jpg",
         "Height": "512",
@@ -90,5 +102,17 @@
         "FilterType": "Apps Booking",
         "ClientName": "Shalayhna",
         "ClientLogo": "assets/img/portfolio/shalayhna-logo.svg"
+    },
+    {
+        "Title": "Sharepoint",
+        "ImageURL": "assets/img/portfolio/kfh-sharepoint-full.png",
+        "BackgroundImage": "assets/img/portfolio/kfh-bg.jpg",
+        "Height": "288",
+        "Width": "512",
+        "GridClass": "grid-item-x2",
+        "LightBgColor": "var(--bs-gray-100)",
+        "FilterType": "Sharepoint",
+        "ClientName": "Kuwait Finance House",
+        "ClientLogo": "assets/img/portfolio/kfh-logo.png"
     }
 ]

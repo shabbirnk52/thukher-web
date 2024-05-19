@@ -7,15 +7,17 @@
     </div>
     <div class="row g-0">
         <div class="col-12">
-            <ul class="nav nav-pills justify-content-center mb-5" id="portfolio-tab" role="tablist">
+            <ul class="nav nav-pills row g-2 justify-content-center mb-5 portfolio-tab" id="portfolio-tab"
+                role="tablist">
                 {{>_portfolio-nav-pill Title="All" Selected=1}}
-                {{>_portfolio-nav-pill Title="Apps"}}
-                {{>_portfolio-nav-pill Title="Websites"}}
+                {{>_portfolio-nav-pill Title="Apps" Icon="fas fa-mobile-screen"}}
+                {{>_portfolio-nav-pill Title="Websites" Icon="fas fa-display"}}
+                {{>_portfolio-nav-pill Title="Sharepoint" Icon="fab fa-microsoft"}}
                 {{!--
                 {{>_portfolio-nav-pill Title="Dashboards"}}
                 --}}
-                {{>_portfolio-nav-pill Title="Booking"}}
-                {{>_portfolio-nav-pill Title="Ecommerce"}}
+                {{!>_portfolio-nav-pill Title="Booking" Icon="fas fa-ticket"}}
+                {{!>_portfolio-nav-pill Title="Ecommerce" Icon="fas fa-cart-shopping"}}
                 {{!--
                 {{>_portfolio-nav-pill Title="Entertainment"}}
                 {{>_portfolio-nav-pill Title="Corporate"}}
@@ -23,18 +25,10 @@
             </ul>
         </div>
     </div>
+
     <div class="row g-0">
         <div class="col-12">
-            <div class="grid border border-4 border-bottom-0 border-start-0 border-end-0 border-gray-300">
-                {{!--
-                {{#repeat 50}}
-                <div class="box adil"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box box-2 adil"></div>
-                <div class="box"></div>
-                {{/repeat}}
-                --}}
+            <div class="grid border border-4 border-bottom-0 border-start-0 border-end-0 border-gray-300 mx-auto">
                 <div class="grid-sizer"></div>
                 {{#each portfolio}}
                 {{>_portfolio-item}}
@@ -44,35 +38,33 @@
     </div>
 </div>
 <!-- Portfolio End -->
+{{!--
 
-<script>
-    var $grid = $('.grid');
-    $(function () {
-        initIsotope();
-    });
-    function initIsotope() {
-        $grid.isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.grid-sizer',
-                // fitWidth: true
-            },
-        });
-        $grid.imagesLoaded().progress(function () {
-            $grid.isotope('layout');
-        });
-        // Layout Isotope on viewport size change
-        // $(window).on('resize', function () {
-        //     $grid.isotope('layout');
-        //     for (var i = 0; i < 5; i++) {
-        //         setTimeout(function () {
-        //             $grid.isotope('layout');
-        //         }, 200);
-        //     }
-        // });
-        $("[data-filter-by]").on("click", function () {
-            $grid.isotope({ filter: $(this).attr("data-filter-by") });
-        });
-    }
-</script>
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto">
+            <h5 class="fw-bold text-primary text-uppercase">Our Projects</h5>
+            <h1 class="mb-0">Projects Completed for Our Happy Clients</h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="btn btn-outline-primary py-2 px-4 active" data-filter="*">
+                        <i class="fa fa-star me-2"></i>All
+                    </li>
+                    <li class="btn btn-outline-primary py-2 px-4" data-filter=".first">
+                        <i class="fa fa-laptop-code me-2"></i>Design
+                    </li>
+                    <li class="btn btn-outline-primary py-2 px-4" data-filter=".second">
+                        <i class="fa fa-mobile-alt me-2"></i>Development
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-5 portfolio-container">
+            {{#each newportfolio}}
+            {{>_portfolio-item-2}}
+            {{/each}}
+        </div>
+    </div>
+</div> --}}

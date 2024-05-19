@@ -1,18 +1,13 @@
 <!-- Vendor Start -->
 <div class="container-fluid py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="bg-white">
-            <div class="owl-carousel vendor-carousel">
-                <img src="assets/img/vendor-1.jpg" alt="">
-                <img src="assets/img/vendor-2.jpg" alt="">
-                <img src="assets/img/vendor-3.jpg" alt="">
-                <img src="assets/img/vendor-4.jpg" alt="">
-                <img src="assets/img/vendor-5.jpg" alt="">
-                <img src="assets/img/vendor-6.jpg" alt="">
-                <img src="assets/img/vendor-7.jpg" alt="">
-                <img src="assets/img/vendor-8.jpg" alt="">
-                <img src="assets/img/vendor-9.jpg" alt="">
-            </div>
+    <div class="bg-white">
+        {{>_section-title Title="Our Clients" Subtitle="Who we work with"}}
+        <div class="owl-carousel vendor-carousel">
+            {{#repeat 56}}
+            {{#if @index}}
+            <img src="assets/img/who-we-work-with/({{@index}}).png" alt="">
+            {{/if}}
+            {{/repeat}}
         </div>
     </div>
 </div>
