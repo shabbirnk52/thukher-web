@@ -45,41 +45,15 @@ breadcrumbs: [{"Text":"Web Templates","URL":"web-templates.html"}]
             </div>
             <div class="col-12 webtemplates-listing">
                 <div class="row g-5">
+                    {{>_web-template-item ThemeName="Scentscape - Bootstrap Classy Ecommerce HTML" ThemeDesc="Modern
+                    Classy Ecommerce HTML Designed using Bootstrap"
+                    ThemeImage="assets/img/web-templates/web-template-1.jpeg" Price="KWD 28.750" OldPrice="KWD 35.000"
+                    HTML=1 Bootstrap=1}}
+                    {{>_web-template-item ThemeName="Scentscape - Mobile App Design" ThemeDesc="Modern
+                    Classy Ecommerce Mobile App Designed using XD" Price="KWD 20.500" OldPrice="KWD 28.000"
+                    XD=1}}
                     {{#repeat 4}}
-                    <div class="col-md-6 col-lg-4">
-                        <div class="webtemplate-item">
-                            <a href="javascript:;">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <img src="https://images.placeholders.dev/?width=400&height=600" width="400"
-                                            height="300" class="object-fit-cover webtemplate-image">
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="p-3 bg-light">
-                                            <h5 class="mb-1">Theme name goes here</h5>
-                                            <small class="text-600">Something goes here as well</small>
-                                            <h4 class="mt-3 mb-0 text-primary">KWD 3.750</h4>
-                                            <div class="rating">
-                                                <div class="row gx-1">
-                                                    {{#repeat 3}}
-                                                    <div class="col-auto">
-                                                        <i class="fas fa-star smaller text-warning"></i>
-                                                    </div>
-                                                    {{/repeat}}
-                                                    <div class="col-auto">
-                                                        <i class="fas fa-star-half-stroke smaller text-warning"></i>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <i class="far fa-star smaller text-400"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    {{>_web-template-item}}
                     {{/repeat}}
                 </div>
             </div>
