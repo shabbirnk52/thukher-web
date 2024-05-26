@@ -46,17 +46,32 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$body-font-size:              1.15rem;
-$h6-font-size:                $font-size-base;
-$font-size-multiplier:        1.33;
-$h5-font-size:                $h6-font-size * $font-size-multiplier;
-$h4-font-size:                $h5-font-size * $font-size-multiplier;
-$h3-font-size:                $h4-font-size * $font-size-multiplier;
-$h2-font-size:                $h3-font-size * $font-size-multiplier;
-$h1-font-size:                $h2-font-size * $font-size-multiplier;
+$color-bootstrap: #712cf9;
+$color-html: #f74a1d;
+$color-angular: #bd002e;
+$color-xd-1:#450135;
+$color-xd-2:#f75eee;
+
+$font-size-base:              1rem; // 1rem is typically 16px, assuming the browser default.
+$body-font-size:              1.15rem; // 1.15rem is 18.4px (1.15 * 16px).
+$h6-font-size:                $body-font-size; // $h6-font-size is 1.15rem, which is 18.4px.
+$font-size-multiplier:        1.25; // Multiplier for font size calculations.
+$h5-font-size:                $h6-font-size * $font-size-multiplier; // $h5-font-size is 1rem * 1.25 = 1.25rem (20px).
+$h4-font-size:                $h5-font-size * $font-size-multiplier; // $h4-font-size is 1.25rem * 1.25 = 1.5625rem (25px).
+$h3-font-size:                $h4-font-size * $font-size-multiplier; // $h3-font-size is 1.5625rem * 1.25 = 1.953125rem (31.25px).
+$h2-font-size:                $h3-font-size * $font-size-multiplier; // $h2-font-size is 1.953125rem * 1.25 = 2.44140625rem (39.0625px).
+$h1-font-size:                $h2-font-size * $font-size-multiplier; // $h1-font-size is 2.44140625rem * 1.25 = 3.0517578125rem (48.828125px).
 
 $headings-font-weight: 900;
+
+$display-font-sizes: (
+  1: 5.25rem, // 5.25rem is 84px (5.25 * 16px).
+  2: 4.75rem, // 4.75rem is 76px (4.75 * 16px).
+  3: 3.5rem,  // 3.5rem is 56px (3.5 * 16px).
+  4: 3.0rem,  // 3.0rem is 48px (3.0 * 16px).
+  5: 2.35rem, // 2.35rem is 37.6px (2.35 * 16px).
+  6: 1.8rem   // 1.8rem is 28.8px (1.8 * 16px).
+);
 
 $font-family:           "Readex Pro", sans-serif;
 $enable-negative-margins: true;
