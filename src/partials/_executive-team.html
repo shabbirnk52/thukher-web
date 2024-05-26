@@ -1,0 +1,87 @@
+<!-- Executive Team Start -->
+<div class="container-fluid pt-3 pb-5 py-lg-5 wow fadeInUp bg-100 g-0" data-wow-delay="0.1s">
+    {{>_section-title Title="Our Team" Subtitle="Who we are"}}
+    <div class="row g-0 g-lg-5">
+        <div class="col-12">
+            <div class="container g-0">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="executive-team-main-slider mb-n5">
+                            {{#repeat 6}}
+                            <div class="executive-team-main-item">
+                                <div class="m-3">
+                                    <div class="row">
+                                        <div class="col-lg-6 order-2 order-lg-1 bg-300">
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-start h-100 p-3">
+                                                <h3>Muhammad Ahmad Abulrehman</h3>
+                                                <h5 class="text-primary">Head of Department - Telecom (VAS)
+                                                </h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Laudantium
+                                                    facere
+                                                    recusandae molestiae. Accusantium asperiores dolorem aperiam. Dicta
+                                                    accusantium
+                                                    odio.</p>
+                                                <div class="row g-2 pb-lg-5">
+                                                    <div class="col-auto">
+                                                        <a class="btn btn-primary btn-square" href="#"><i
+                                                                class="fab fa-x-twitter fw-normal"></i></a>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a class="btn btn-primary btn-square" href="#"><i
+                                                                class="fab fa-snapchat fw-normal"></i></a>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a class="btn btn-primary btn-square" href="#"><i
+                                                                class="fab fa-instagram fw-normal"></i></a>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <a class="btn btn-primary btn-square" href="#"><i
+                                                                class="fab fa-linkedin-in fw-normal"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 order-1 order-lg-2 bg-primary">
+                                            <img src="assets/img/exec-team/{{add @index 1}}.png"
+                                                class="object-fit-cover w-100 h-100" width="600" height="600">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/repeat}}
+                        </div>
+                    </div>
+                    <div class="col-12 d-none d-lg-block">
+                        <div class="executive-team-secondary-slider mt-n3">
+                            {{#repeat 6}}
+                            <div class="executive-team-secondary-item">
+                                <div class="mx-1 bg-executive-team ps-3 pt-3 pe-3 pb-3 pe-lg-0 pb-lg-0">
+                                    <div class="row g-0">
+                                        <div class="col-lg-7">
+                                            <div
+                                                class="d-flex flex-column justify-content-center h-100 text-center text-lg-start">
+                                                <h6>
+                                                    Muhammad Ahmad Abulrehman
+                                                </h6>
+                                                <p class="text-primary mb-0 small">Head of Department - Telecom (VAS)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 d-none d-lg-block">
+                                            <img src="assets/img/exec-team/{{add @index 1}}.png"
+                                                class="object-fit-cover w-100 h-100" width="300" height="300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/repeat}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Executive Team End -->

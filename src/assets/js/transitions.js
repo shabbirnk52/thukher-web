@@ -9,13 +9,14 @@ swup.hooks.on('visit:start', (visit) => {
     console.log('Clicked link', visit);
     if ($("button.navbar-toggler").attr("aria-expanded") == "true") {
         $("button.navbar-toggler").click();
+        $(".navbar").removeClass("navbar-expanded");
     }
     // console.log('Clicked link', visit.trigger.el); // HTMLAnchorElement
     $(".page-title").css("height", $(".page-title").height());
     $(".page-title h1").css("height", $(".page-title h1").height());
     $(".page-title .breadcrumbs").css("height", $(".page-title .breadcrumbs").height());
-    if ($(visit.trigger.el).hasClass("nav-link")) {
-        $(".navbar-nav .nav-item.nav-link.active").removeClass("active");
+    if ($(visit.trigger.el).closest(".navbar-nav").length > 0) {
+        $(".navbar-nav .active").removeClass("active");
         $(visit.trigger.el).addClass("active");
     }
     if (visit.to.url == `${baseURL}index.html` || visit.to.url == `${baseURL}/` || visit.to.url == `${baseURL}/index.html`) {

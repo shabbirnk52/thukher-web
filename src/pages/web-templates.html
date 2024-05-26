@@ -1,0 +1,63 @@
+---
+layout: default
+title: Web Templates
+breadcrumbs: [{"Text":"Web Templates","URL":"web-templates.html"}]
+---
+
+<!-- Web Templates Start -->
+<div class="container-fluid py-5 wow fadeInUp transition-fade" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="row g-0 mb-3">
+                    {{!--
+                    Search by Select is not required at the moment
+                    <div class="col-2">
+                        {{#>_select-field-block Classes="h-100"}}
+                        <option value="1">Content 1</option>
+                        <option value="2">Content 2</option>
+                        <option value="3">Content 3</option>
+                        <option value="4">Content 4</option>
+                        <option value="5">Content 5</option>
+                        <option value="6">Content 6</option>
+                        {{/_select-field-block}}
+                    </div> --}}
+                    <div class="col">
+                        {{>_input-field Label="Search" FloatingLabel=1 Classes="form-control-lg rounded-0 border-0
+                        bg-light px-4"}}
+                    </div>
+                    <div class="col-auto">
+                        {{>_button-a ButtonClasses="btn-primary d-flex align-items-center h-100" ButtonText="Search"}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills row g-2 justify-content-center mb-0 portfolio-tab" id="portfolio-tab"
+                            role="tablist">
+                            {{>_portfolio-nav-pill Title="All" Selected=1}}
+                            {{>_portfolio-nav-pill Title="Apps" Icon="fas fa-mobile-screen"}}
+                            {{>_portfolio-nav-pill Title="Websites" Icon="fas fa-display"}}
+                            {{>_portfolio-nav-pill Title="Ecommerce" Icon="fas fa-cart-shopping"}}
+                            {{>_portfolio-nav-pill Title="Corporate" Icon="fas fa-briefcase"}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 webtemplates-listing">
+                <div class="row g-5">
+                    {{>_web-template-item ThemeName="Scentscape - Bootstrap Classy Ecommerce HTML" ThemeDesc="Modern
+                    Classy Ecommerce HTML Designed using Bootstrap"
+                    ThemeImage="assets/img/web-templates/web-template-1.jpeg" Price="KWD 28.750" OldPrice="KWD 35.000"
+                    HTML=1 Bootstrap=1}}
+                    {{>_web-template-item ThemeName="Scentscape - Mobile App Design" ThemeDesc="Modern
+                    Classy Ecommerce Mobile App Designed using XD" Price="KWD 20.500" OldPrice="KWD 28.000"
+                    XD=1}}
+                    {{#repeat 4}}
+                    {{>_web-template-item}}
+                    {{/repeat}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Web Templates End -->

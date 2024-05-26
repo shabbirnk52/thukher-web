@@ -314,6 +314,15 @@ function themeInit() {
     toggleTopButton();
   }
 
+  $(".navbar-toggler").click(function () {
+    if ($(this).attr("aria-expanded") == "true") {
+      $(".navbar").addClass("navbar-expanded");
+    }
+    else {
+      $(".navbar").removeClass("navbar-expanded");
+    }
+  });
+
   // Spinner
   var spinner = function () {
     setTimeout(function () {
@@ -484,6 +493,34 @@ function themeInit() {
         items: 3
       }
     }
+  });
+
+  // Executive Team carousel
+  $('.executive-team-main-slider').slick({
+    asNavFor: '.executive-team-secondary-slider',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        centerMode: true,
+      }
+    },]
+  });
+  $('.executive-team-secondary-slider').slick({
+    slidesToShow: 3,
+    arrows: true,
+    dots: true,
+    asNavFor: '.executive-team-main-slider',
+    focusOnSelect: true,
+    prevArrow: '<a href="javascript:;" class="slick-arrow-btn prev-btn d-none d-lg-flex"><i class="fas fa-chevron-left"></i></a>',
+    nextArrow: '<a href="javascript:;" class="slick-arrow-btn next-btn d-none d-lg-flex"><i class="fas fa-chevron-right"></i></a>',
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+      }
+    },]
   });
 
 }
