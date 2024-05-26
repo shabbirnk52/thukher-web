@@ -1,7 +1,7 @@
 <!-- Carousel Start -->
-<div id="header-carousel" class="carousel slide carousel-fade z-2" data-bs-ride1="carousel">
+<div id="header-carousel" class="carousel slide carousel-fade z-2" data-bs-ride="carousel">
   <div class="carousel-inner transition-away-up">
-    {{#each banner}}
+    {{#each banner}}{{#unless Inactive}}
     <div class="carousel-item{{#ifequal @index 0}} active{{/ifequal}}">
       {{#if VideoURL}}
       <video loop="" muted="" playsinline autoplay preload="metadata" height="900" width="1920" poster="{{PosterURL}}">
@@ -10,8 +10,9 @@
       {{else}}
       <img class="w-100" src="{{ImageURL}}" alt="Image">
       {{/if}}
-      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <div class="p-3 p-lg-4 animated fadeInUp" style="max-width: 900px;">
+      <div
+        class="carousel-caption d-flex flex-column {{#if ContentLeft}}align-items-start{{else}}align-items-center{{/if}} justify-content-center">
+        <div class="p-3 p-lg-4 animated fadeInUp{{#if ContentLeft}} text-md-start{{/if}}">
           <h5 class="text-white text-uppercase mb-3 animated fadeInDown">{{Title}}
           </h5>
           <h1 class="display-3 text-white mb-md-4 animated zoomIn">{{Subtitle}}</h1>
@@ -20,7 +21,7 @@
           <a href="contact.html" class="btn btn-glass py-md-3 px-md-5 animated fadeInRight">Contact Us</a>
         </div>
       </div>
-    </div>
+    </div>{{/unless}}
     {{/each}}
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">

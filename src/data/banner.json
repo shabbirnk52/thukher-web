@@ -2,7 +2,14 @@
     {
         "Title": "Media Phone Plus",
         "Subtitle": "Connecting Minds, Crafting Futures",
-        "VideoURL": "assets/videos/sanabil-tower.mp4"
+        "VideoURL": "assets/videos/Media_Slide_Final_Final.mp4",
+        "ContentLeft": true
+    },
+    {
+        "Title": "Media Phone Plus",
+        "Subtitle": "Connecting Minds, Crafting Futures",
+        "VideoURL": "assets/videos/sanabil-tower.mp4",
+        "Inactive": true
     },
     {
         "Title": "Web & App Design and Development",
@@ -17,7 +24,7 @@
     {
         "Title": "Enterprise",
         "Subtitle": "Scalable Solutions",
-        "ImageURL": "assets/img/banner/banner-1.jpg"
+        "ImageURL": "assets/img/banner/banner-8.jpg"
     },
     {
         "Title": "Telecom - VAS",
