@@ -13,8 +13,8 @@ Make sure you have Node.js and npm installed on your machine.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Media-Phone-Plus/TEC-frontend-HTML.git
-cd TEC-frontend-HTML
+git clone https://github.com/Media-Phone-Plus/MPP-new-website.git
+cd MPP-new-website
 ```
 
 ### Install Dependencies
