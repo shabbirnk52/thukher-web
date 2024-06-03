@@ -1,0 +1,27 @@
+[
+    {
+        "Name": "Mohammad Daas",
+        "Title": "General Manager",
+        "ImageURL": "assets/img/exec-team/muhammad-daas-gm-mpp.png"
+    },
+    {
+        "Name": "Saqiba Sulman",
+        "Title": "Director IT and Business Development",
+        "ImageURL": "assets/img/exec-team/saqiba-salman.png"
+    },
+    {
+        "Name": "Saqib Ahmed",
+        "Title": "Head of Telecom Division",
+        "ImageURL": "assets/img/exec-team/user-placeholder.png"
+    },
+    {
+        "Name": "Khalil Muhammad",
+        "Title": "Sales Executive - Corporate SMS Department",
+        "ImageURL": "assets/img/exec-team/khalil-muhammad.png"
+    },
+    {
+        "Name": "Fatema Peeth",
+        "Title": "Corporate SMS Department",
+        "ImageURL": "assets/img/exec-team/user-placeholder.png"
+    }
+]
