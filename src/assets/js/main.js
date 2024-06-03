@@ -496,6 +496,9 @@ function themeInit() {
   });
 
   // Executive Team carousel
+  $('.executive-team-main-slider').on('init', function (event, slick, currentSlide, nextSlide) {
+    slick.$slideTrack.height(slick.$slideTrack.height());
+  });
   $('.executive-team-main-slider').slick({
     asNavFor: '.executive-team-secondary-slider',
     responsive: [{
