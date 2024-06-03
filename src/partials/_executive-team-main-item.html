@@ -1,0 +1,44 @@
+<div class="executive-team-main-item h-100">
+    <div class="m-3 h-100">
+        <div class="row g-0 h-100">
+            <div class="col-lg-6 order-2 order-lg-1 bg-300 h-100">
+                <div
+                    class="d-flex flex-column justify-content-start justify-content-lg-center align-items-start h-100 p-3">
+                    <h3>{{Name}}</h3>
+                    <h5 class="text-primary">{{Title}}
+                    </h5>
+                    {{#if Message}}<p>{{Message}}</p>{{/if}}
+                    <div class="row g-2 pb-lg-5">
+                        {{#if Twitter}}
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-square" href="{{Twitter}}"><i
+                                    class="fab fa-x-twitter fw-normal"></i></a>
+                        </div>
+                        {{/if}}
+                        {{#if Snapchat}}
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-square" href="{{Snapchat}}"><i
+                                    class="fab fa-snapchat fw-normal"></i></a>
+                        </div>
+                        {{/if}}
+                        {{#if Instagram}}
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-square" href="{{Instagram}}"><i
+                                    class="fab fa-instagram fw-normal"></i></a>
+                        </div>
+                        {{/if}}
+                        {{#if LinkedIn}}
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-square" href="{{LinkedIn}}"><i
+                                    class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 bg-primary">
+                <img src="{{ImageURL}}" class="object-fit-cover w-100 h-100" width="600" height="600">
+            </div>
+        </div>
+    </div>
+</div>
