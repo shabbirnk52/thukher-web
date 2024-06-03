@@ -390,7 +390,7 @@ input[type="file"] {
   height: auto;
   img,video {
       max-width: 100%;
-      height: auto;
+      height: 40vh;
       object-fit: cover;
       object-position: center;
   }
