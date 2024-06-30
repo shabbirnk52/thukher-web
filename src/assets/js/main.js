@@ -497,7 +497,9 @@ function themeInit() {
 
   // Executive Team carousel
   $('.executive-team-main-slider').on('init', function (event, slick, currentSlide, nextSlide) {
-    slick.$slideTrack.height(slick.$slideTrack.height());
+    setTimeout(function () {
+      slick.$slideTrack.height(slick.$slideTrack.height());
+    }, 200);
   });
   $('.executive-team-main-slider').slick({
     asNavFor: '.executive-team-secondary-slider',
@@ -514,8 +516,8 @@ function themeInit() {
     dots: true,
     asNavFor: '.executive-team-main-slider',
     focusOnSelect: true,
-    prevArrow: '<a href="javascript:;" class="slick-arrow-btn prev-btn d-none d-lg-flex"><i class="fas fa-chevron-left"></i></a>',
-    nextArrow: '<a href="javascript:;" class="slick-arrow-btn next-btn d-none d-lg-flex"><i class="fas fa-chevron-right"></i></a>',
+    prevArrow: $("html").attr("dir") == "rtl" ? '<a href="javascript:;" class="slick-arrow-btn prev-btn d-none d-lg-flex"><i class="fas fa-chevron-right"></i></a>' : '<a href="javascript:;" class="slick-arrow-btn prev-btn d-none d-lg-flex"><i class="fas fa-chevron-left"></i></a>',
+    nextArrow: $("html").attr("dir") == "rtl" ? '<a href="javascript:;" class="slick-arrow-btn next-btn d-none d-lg-flex"><i class="fas fa-chevron-left"></i></a>' : '<a href="javascript:;" class="slick-arrow-btn next-btn d-none d-lg-flex"><i class="fas fa-chevron-right"></i></a>',
     responsive: [{
       breakpoint: 576,
       settings: {
