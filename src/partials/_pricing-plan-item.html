@@ -1,0 +1,45 @@
+<div class="col">
+    <div class="card bg-light border-0 px-1 py-2 px-lg-2 py-lg-3{{#if Recommended}} recommended{{/if}}">
+        {{#if Recommended}}<div class="position-absolute top-0 start-50 translate-middle">
+            <div class="badge bg-primary text-center border border-2 border-primary">Recommended</div>
+        </div>{{/if}}
+        <div class="card-body">
+            <div class="pricing-header text-center">
+                {{{TopIcon}}}
+                <h2 class="h4 mb-2 text-center">{{PackageName}}</h2>
+                <p class="text-secondary m-0 text-center">{{PackageDesc}}</p>
+            </div>
+            <hr class="my-2 border-dark-subtle">
+            <div class="plan-amount-wrapper position-relative mb-3 text-center">
+                <div class="plan-amount monthly-amount">
+                    <h4 class="display-3 fw-bold text-primary mb-0">{{MonthlyPrice}}</h4>
+                    <p class="text-secondary mb-0">KWD / Month</p>
+                </div>
+                <div class="plan-amount yearly-amount visually-hidden">
+                    <h4 class="display-3 fw-bold text-primary mb-0">{{YearlyPrice}}</h4>
+                    <p class="text-secondary mb-0">KWD / Year</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    {{>_button-a ButtonText="Select Package" ButtonClasses="btn-primary w-100" URL="quote.html"}}
+                </div>
+            </div>
+            <ul class="list-group list-group-flush m-0">
+                {{#each PricingFeatures}}
+                {{#if Included}}
+                <li class="list-group-item bg-transparent">
+                    <i class="far fa-circle-check text-success"></i>
+                    <span class="ms-2">{{{Text}}}</span>
+                </li>
+                {{else}}
+                <li class="list-group-item bg-transparent text-muted">
+                    <i class="fas fa-xmark text-danger"></i>
+                    <span class="ms-2">{{{Text}}}</span>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

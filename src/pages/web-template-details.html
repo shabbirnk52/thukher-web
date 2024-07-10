@@ -1,0 +1,85 @@
+---
+layout: default
+title: Scentscape
+breadcrumbs: [{"Text":"Web Templates","URL":"web-templates.html"},{"Text":"Scentscape","URL":"#"}]
+---
+{{#with web-templates.[0]}}
+<!-- Web Template Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container mb-3">
+        <div class="row g-5">
+            <div class="col">
+                <!-- Web Template Detail Start -->
+                <div class="mb-3">
+                    <h1 class="h2 mb-2">{{ThemeName}}</h1>
+                    <div class="d-flex w-100 mb-3">
+                        {{#if Bootstrap}}<div class="badge bg-bootstrap h-100 me-1">Bootstrap</div>{{/if}}
+                        {{#if HTML}}<div class="badge bg-html h-100 me-1">HTML</div>{{/if}}
+                        {{#if Angular}}<div class="badge bg-angular h-100 me-1">Angular</div>{{/if}}
+                        {{#if XD}}<div class="badge bg-xd h-100 me-1">XD</div>{{/if}}
+                    </div>
+                    <img class="object-fit-cover w-100 rounded web-template-image" src="{{ThemeImageBig}}" height="400">
+                    <div class="web-template-description summernote-content mt-3">
+                        <p>{{LongDescription}}</p>
+                        {{#if Features}}
+                        <h4>Key Features</h4>
+                        <ul class="list-group list-group-flush">
+                            {{#each Features}}
+                            <li class="list-group-item">
+                                <i class="{{Icon}} text-primary"></i>
+                                <span class="ms-2">{{Text}}</span>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </div>
+                </div>
+                <!-- Web Template Detail End -->
+            </div>
+            {{!-- <!-- Sidebar Start -->
+            <div class="col-lg-4">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="p-3 bg-primary">
+                            <h5 class="text-light mb-3">Get a Quote</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-xl-12">
+                                        <input type="text" class="form-control bg-light border-0"
+                                            placeholder="Your Name" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control bg-light border-0"
+                                            placeholder="Your Email" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control bg-light border-0" rows="3"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        {{>_button-a URL="javascript:;" ButtonClasses="btn-dark w-100 submit-btn"
+                                        ButtonText="Request Quote"}}
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        {{>_button-a ButtonText="Live Demo" ButtonClasses="btn-primary w-100"}}
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar End --> --}}
+        </div>
+    </div>
+    <div class="container">
+        {{>_pricingplan-2}}
+    </div>
+    <div class="container">
+        <div class="row">
+            {{>_call-us-quote}}
+        </div>
+    </div>
+</div>
+<!-- Web Template End -->
+{{/with}}

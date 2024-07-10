@@ -7,10 +7,12 @@
                 {{#unless BottomActionBtns}}
                 <div class="row g-0 mid-action-btns">
                     <div class="col-6">
-                        {{>_button-a ButtonText="Live Preview" ButtonClasses="btn-secondary w-100" URL="javascript:;"}}
+                        {{>_button-a ButtonText="Live Preview" ButtonClasses="btn-secondary w-100" NewWindow=1
+                        URL=DemoURL}}
                     </div>
                     <div class="col-6">
-                        {{>_button-a ButtonText="Buy Now" ButtonClasses="btn-primary w-100" URL="javascript:;"}}
+                        {{>_button-a ButtonText="View Details" ButtonClasses="btn-primary w-100"
+                        URL="web-template-details.html"}}
                     </div>
                 </div>
                 {{/unless}}
@@ -26,7 +28,7 @@
                     <h5 class="mb-1">{{#if ThemeName}}{{ThemeName}}{{else}}Theme name goes here{{/if}}</h5>
                     <small class="text-600 d-block mb-1">{{#if ThemeDesc}}{{ThemeDesc}}{{else}}Something goes here
                         as well{{/if}}</small>
-                    <div class="rating mb-3">
+                    {{!-- <div class="rating mb-3">
                         <div class="row gx-1 small">
                             {{#repeat 3}}
                             <div class="col-auto">
@@ -40,20 +42,21 @@
                                 <i class="far fa-star smaller text-400"></i>
                             </div>
                         </div>
-                    </div>
-                    {{#if OldPrice}}<h6 class="text-decoration-line-through text-400 mb-1">{{OldPrice}}</h6>{{/if}}
-                    <h5 class="mt-0 mb-3 text-primary">{{#if Price}}{{Price}}{{else}}KWD 35.500{{/if}}</h5>
-                    {{!>_button-a ButtonText="Buy Now" ButtonClasses="btn-primary w-100" URL="javascript:;"}}
+                    </div> --}}
+                    {{!-- {{#if OldPrice}}<h6 class="text-decoration-line-through text-400 mb-1">{{OldPrice}}</h6>
+                    {{/if}}
+                    <h5 class="mt-0 mb-3 text-primary">{{#if Price}}{{Price}}{{else}}KWD 35.500{{/if}}</h5> --}}
                 </div>
             </div>
         </div>
         {{#if BottomActionBtns}}
         <div class="row g-0 action-btns">
             <div class="col-6">
-                {{>_button-a ButtonText="Live Preview" ButtonClasses="btn-secondary w-100" URL="javascript:;"}}
+                {{>_button-a ButtonText="Live Preview" ButtonClasses="btn-secondary w-100" NewWindow=1 URL=DemoURL}}
             </div>
             <div class="col-6">
-                {{>_button-a ButtonText="Buy Now" ButtonClasses="btn-primary w-100" URL="javascript:;"}}
+                {{>_button-a ButtonText="View Details" ButtonClasses="btn-primary w-100"
+                URL="web-template-details.html"}}
             </div>
         </div>
         {{/if}}

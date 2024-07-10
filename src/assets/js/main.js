@@ -25,6 +25,12 @@ function initAllModules() {
     $(".language-switch").html("English");
   }
 
+  $(".plan-amount-wrapper").each(function () {
+    $(this).height($(this).height());
+  });
+  $("#package-duration-switch").change(function () {
+    $(".plan-amount").toggleClass("visually-hidden");
+  });
   setTimeout(function () {
     if ($('html').attr('dir') == 'rtl') {
       $('.slick-initialized').each(function () {

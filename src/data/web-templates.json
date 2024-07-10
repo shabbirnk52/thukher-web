@@ -1,0 +1,194 @@
+[
+    {
+        "ThemeName": "Scentscape - Bootstrap Classy Ecommerce HTML",
+        "ThemeDesc": "Modern Classy Ecommerce HTML Designed using Bootstrap",
+        "ThemeImage": "assets/img/web-templates/web-template-1.jpeg",
+        "ThemeImageBig": "assets/img/web-templates/web-template-1-big.jpg",
+        "Price": "KWD 28.750",
+        "OldPrice": "KWD 35.000",
+        "HTML": 1,
+        "Bootstrap": 1,
+        "DemoURL": "https://designs.mpp.com.kw/theme-designs/scentscape/html/",
+        "LongDescription": "Scentscape, the perfect theme for fragrance brands, boutiques, and perfumeries. Designed with elegance and functionality in mind, Scentscape provides everything you need to create a stunning online presence and captivate your audience.",
+        "Features": [
+            {
+                "Icon": "fas fa-list",
+                "Text": "Unlimited Product Categories"
+            },
+            {
+                "Icon": "fas fa-boxes-stacked",
+                "Text": "Unlimited Products"
+            },
+            {
+                "Icon": "fas fa-cart-shopping",
+                "Text": "Ecommerce"
+            },
+            {
+                "Icon": "fas fa-mobile-screen",
+                "Text": "Mobile-first Design"
+            },
+            {
+                "Icon": "fab fa-instagram",
+                "Text": "Instagram Feed"
+            },
+            {
+                "Icon": "fas fa-magnifying-glass-chart",
+                "Text": "Advanced SEO"
+            },
+            {
+                "Icon": "fas fa-language",
+                "Text": "Multilingual / Arabic"
+            },
+            {
+                "Icon": "fas fa-globe",
+                "Text": "Multicountry"
+            },
+            {
+                "Icon": "fas fa-moon",
+                "Text": "Dark Mode"
+            }
+        ],
+        "PricingPlan": [
+            {
+                "TopIcon": "<i class='display-4 fas fa-desktop text-primary mb-3'></i>",
+                "PackageName": "Starter",
+                "PackageDesc": "Website",
+                "MonthlyPrice": "25",
+                "YearlyPrice": "250",
+                "PricingFeatures": [
+                    {
+                        "Text": "Free Domain Name Booking <span class='text-danger'>*</span>",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Free SSL Certificate",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "0% Commission",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Upto 5 User Accounts",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "KNET / Visa / Mastercard",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Apple Pay"
+                    },
+                    {
+                        "Text": "Notifications"
+                    },
+                    {
+                        "Text": "Analytical Report"
+                    },
+                    {
+                        "Text": "Popup Ad Banner Banner"
+                    },
+                    {
+                        "Text": "Promotion Codes"
+                    }
+                ]
+            },
+            {
+                "TopIcon": "<i class='display-4 fas fa-mobile-screen text-primary mb-3'></i>",
+                "PackageName": "Pro",
+                "PackageDesc": "Application",
+                "MonthlyPrice": "40",
+                "YearlyPrice": "400",
+                "PricingFeatures": [
+                    {
+                        "Text": "Free Domain Name Booking <span class='text-danger'>*</span>",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Free SSL Certificate",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "0% Commission",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Upto 5 User Accounts",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "KNET / Visa / Mastercard",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Apple Pay",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Notifications",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Analytical Report"
+                    },
+                    {
+                        "Text": "Popup Ad Banner Banner"
+                    },
+                    {
+                        "Text": "Promotion Codes"
+                    }
+                ]
+            },
+            {
+                "Recommended": 1,
+                "TopIcon": "<i class='display-4 fas fa-desktop text-primary mb-3'></i> <i class='display-6 fas fa-plus text-primary mb-3'></i> <i class='display-4 fas fa-mobile-screen text-primary mb-3'></i>",
+                "PackageName": "Business",
+                "PackageDesc": "Website & Application",
+                "MonthlyPrice": "50",
+                "YearlyPrice": "500",
+                "PricingFeatures": [
+                    {
+                        "Text": "Free Domain Name Booking <span class='text-danger'>*</span>",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Free SSL Certificate",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "0% Commission",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Upto 5 User Accounts",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "KNET / Visa / Mastercard",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Apple Pay",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Notifications",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Analytical Report",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Popup Ad Banner Banner",
+                        "Included": 1
+                    },
+                    {
+                        "Text": "Promotion Codes",
+                        "Included": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

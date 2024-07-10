@@ -44,17 +44,10 @@ breadcrumbs: [{"Text":"Web Templates","URL":"web-templates.html"}]
                 </div>
             </div>
             <div class="col-12 webtemplates-listing">
-                <div class="row g-5">
-                    {{>_web-template-item ThemeName="Scentscape - Bootstrap Classy Ecommerce HTML" ThemeDesc="Modern
-                    Classy Ecommerce HTML Designed using Bootstrap"
-                    ThemeImage="assets/img/web-templates/web-template-1.jpeg" Price="KWD 28.750" OldPrice="KWD 35.000"
-                    HTML=1 Bootstrap=1}}
-                    {{>_web-template-item ThemeName="Scentscape - Mobile App Design" ThemeDesc="Modern
-                    Classy Ecommerce Mobile App Designed using XD" Price="KWD 20.500" OldPrice="KWD 28.000"
-                    XD=1}}
-                    {{#repeat 4}}
+                <div class="row g-5 justify-content-center">
+                    {{#each web-templates}}
                     {{>_web-template-item}}
-                    {{/repeat}}
+                    {{/each}}
                 </div>
             </div>
         </div>

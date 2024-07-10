@@ -45,6 +45,11 @@
 .form-floating label::after {
   background: var(--bs-light) !important;
 }
+
+.form-switch .form-check-input{
+  height: 2em;
+}
+
 body{
   min-height: 100vh;
   max-width: 100vw;
@@ -656,4 +661,35 @@ footer{
       background-color: var(--bs-dark);
       padding-bottom: 2rem !important;
   }
+}
+
+.plan-amount{
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.3s ease;
+  &.visually-hidden{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+.web-template-image{
+  animation: autoscroll 20s linear 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  object-position: top;
+}
+
+@keyframes autoscroll {
+  0%{
+    object-position: top;
+  }
+  100%{
+    object-position: bottom;
+  }
+}
+
+.recommended{
+  border: 2px solid $primary !important;
+  position: relative;
 }
