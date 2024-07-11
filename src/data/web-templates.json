@@ -1,7 +1,7 @@
 [
     {
-        "ThemeName": "Scentscape - Bootstrap Classy Ecommerce HTML",
-        "ThemeDesc": "Modern Classy Ecommerce HTML Designed using Bootstrap",
+        "ThemeName": "Scentscape",
+        "ThemeDesc": "Modern Classy Ecommerce Store Designed using Bootstrap",
         "ThemeImage": "assets/img/web-templates/web-template-1.jpeg",
         "ThemeImageBig": "assets/img/web-templates/web-template-1-big.jpg",
         "Price": "KWD 28.750",
@@ -190,5 +190,37 @@
                 ]
             }
         ]
+    },
+    {
+        "ThemeName": "Luxe Jewels",
+        "ThemeDesc": "Modern Classy Flowershop Designed using Bootstrap",
+        "ThemeImage": "assets/img/web-templates/luxe-jewels.jpeg",
+        "ThemeImageBig": "assets/img/web-templates/luxe-jewels.jpg",
+        "Price": "KWD 28.750",
+        "OldPrice": "KWD 35.000",
+        "HTML": 1,
+        "Bootstrap": 1,
+        "DemoURL": "https://designs.mpp.com.kw/theme-designs/luxejewels/html/"
+    },
+    {
+        "ThemeName": "Zahra",
+        "ThemeDesc": "Modern Classy Flowershop Designed using Bootstrap",
+        "ThemeImage": "assets/img/web-templates/zahra.jpeg",
+        "ThemeImageBig": "assets/img/web-templates/zahra.jpg",
+        "Price": "KWD 28.750",
+        "OldPrice": "KWD 35.000",
+        "HTML": 1,
+        "Bootstrap": 1,
+        "DemoURL": "https://designs.mpp.com.kw/theme-designs/zahra/html/"
+    },
+    {
+        "ThemeName": "Gym Management System",
+        "ThemeDesc": "Modern Gym Management System with Trainer Bookings and Memberships",
+        "ThemeImage": "assets/img/web-templates/gym-app.jpeg",
+        "ThemeImageBig": "assets/img/web-templates/gym-app.jpg",
+        "Price": "KWD 28.750",
+        "OldPrice": "KWD 35.000",
+        "HTML": 1,
+        "Bootstrap": 1
     }
 ]
