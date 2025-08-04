@@ -1,6 +1,6 @@
-# Media Phone Plus
+# مركـز ذخر ,المركز التأهيلى الصحى للمتقاعدين 
 
-Corporate Site HTML for Media Phone Plus.
+Corporate Site HTML for مركـز ذخر ,المركز التأهيلى الصحى للمتقاعدين 
 
 ## Build Process
 
@@ -13,8 +13,8 @@ Make sure you have Node.js and npm installed on your machine.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Media-Phone-Plus/MPP-new-website.git
-cd MPP-new-website
+git clone https://github.com/shabbirnk52/thukher-web.git
+cd Thukher web-new-website
 ```
 
 ### Install Dependencies
