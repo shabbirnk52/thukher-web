@@ -672,7 +672,7 @@ function truncateTestimonialText() {
     $(".testimonial-text").each(function () {
       if ($(this).text().trim().length > TextLimit) {
         var readMoreText = $('html').attr('dir') != 'rtl' ? "Read More" : "اقرأ المزيد";
-        var $readmorelink = <a href="javascript:;" class="link-primary readmore-link" data-readmoretext="${$(this).html().trim()}">${readMoreText}</a>;
+        var $readmorelink = `<a href="javascript:;" class="link-primary readmore-link" data-readmoretext="${$(this).html().trim()}">${readMoreText}</a>`;
         $(this).html($(this).text().trim().substring(0, TextLimit).split(" ").slice(0, -1).join(" ") + "... " + $readmorelink);
       }
     });

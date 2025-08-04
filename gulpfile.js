@@ -292,7 +292,7 @@ function copyDownloads() {
 }
 function compressImages() {
   log(chalk.red.bold('---------------OPTIMIZING IMAGES---------------'));
-  return src('src/assets/img/**/*.+(png|jpg|jpeg)')
+  return src('src/assets/img/**/*.+(png|jpg|jpeg|webp)')
     .pipe(newer('dist/assets/img/'))
     .pipe(cache(imagemin({ interlaced: true, }[
       webp({
