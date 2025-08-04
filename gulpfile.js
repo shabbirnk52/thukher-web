@@ -40,7 +40,7 @@ const cache = require('gulp-cache');
 const replace = require('gulp-replace');
 
 const log = console.log;
-// Start: Added by Adil
+
 const fs = require('fs');
 const path = require('path');
 const through2 = require('through2');
@@ -57,7 +57,7 @@ var ArabicResourceStructure = [];
 var EnglishResourceStructureByPage = [];
 var ArabicResourceStructureByPage = [];
 var SourceResourceFileDumper = [];
-// End: Added by Adil
+
 
 // File paths
 const files = {
@@ -94,10 +94,10 @@ function compileHTML() {
     .pipe(replace(".jpg", ".webp"))
     .pipe(replace(".jpeg", ".webp"))
     .pipe(dest('dist'))
-    // Adil
+  
     .pipe(replace('.html"', '-rtl.html"'))
     .pipe(replace(".html'", "-rtl.html'"))
-    //Ruchir
+  
     .pipe(rename({ suffix: '-rtl' }))
     .pipe(dest('dist'))
     .pipe(browserSync.stream());
@@ -997,7 +997,7 @@ function cleanDeveloper(done) {
 // DELETE DIST FOLDER
 function TestFunctions(done) {
   log(chalk.red.bold('---------------Running Tests---------------'));
-  console.log(wrapLocalizableStrings('<div localize-me><p>Adil<a href="javascript:;" class="test">Click Me!<span>Please</span></a></p></div>'));
+  console.log(wrapLocalizableStrings('<div localize-me><p><a href="javascript:;" class="test">Click Me!<span>Please</span></a></p></div>'));
   return done();
 }
 function wrapLocalizableStrings1(input) {
